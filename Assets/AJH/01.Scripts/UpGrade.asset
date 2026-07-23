@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: State
+  m_Name: UpGrade
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeSO
-  _upgradeName: 
-  _icon: {fileID: 0}
+  upgradeName: 
+  icon: {fileID: 0}
   description: 
-  _maxLevel: 5
+  maxLevel: 5
   modifiers: []
