@@ -15,8 +15,8 @@ MonoBehaviour:
   statName: PickUp
   icon: {fileID: 0}
   description: dddsdfas
-  baseValue: 10
+  baseValue: 50
   valuePerLevel: 2
-  baseCost: 100
+  baseCost: 120
   costMultiplier: 1.5
   currentLevel: 0

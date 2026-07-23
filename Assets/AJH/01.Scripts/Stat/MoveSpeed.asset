@@ -15,8 +15,8 @@ MonoBehaviour:
   statName: MoveSpeed
   icon: {fileID: 0}
   description: ss
-  baseValue: 10
-  valuePerLevel: 2
-  baseCost: 100
+  baseValue: 5
+  valuePerLevel: 1
+  baseCost: 80
   costMultiplier: 1.5
   currentLevel: 0

@@ -15,8 +15,8 @@ MonoBehaviour:
   statName: Work Speed
   icon: {fileID: 0}
   description: dd
-  baseValue: 10
-  valuePerLevel: 2
-  baseCost: 100
+  baseValue: 1
+  valuePerLevel: 1
+  baseCost: 150
   costMultiplier: 1.5
   currentLevel: 0

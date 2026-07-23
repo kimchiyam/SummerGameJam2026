@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: 0}
   description: aa
   baseValue: 10
-  valuePerLevel: 2
+  valuePerLevel: 20
   baseCost: 100
   costMultiplier: 1.5
   currentLevel: 0
