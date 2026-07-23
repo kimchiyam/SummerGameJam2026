@@ -31,7 +31,10 @@ public class Question : MonoBehaviour
                 text.text = $"이미 말했잖아요.";
             }
 
-            text.rectTransform.DOAnchorPosY(1f, 0.2f).SetLoops(1, LoopType.Yoyo);
+            text.rectTransform.DOAnchorPos(new Vector3(text.rectTransform.anchoredPosition.x, text.rectTransform.anchoredPosition.y + 10, 0), 0.1f).OnComplete(() =>
+            {
+                text.rectTransform.DOAnchorPos(new Vector3(text.rectTransform.anchoredPosition.x ,  text.rectTransform.anchoredPosition.y - 10, 0) , 0.1f);
+            });
             
             
         }

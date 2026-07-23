@@ -508,6 +508,7 @@ GameObject:
   - component: {fileID: 578841097}
   - component: {fileID: 578841099}
   - component: {fileID: 578841098}
+  - component: {fileID: 578841100}
   m_Layer: 5
   m_Name: Information
   m_TagString: Untagged
@@ -536,7 +537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 86, y: 267.24988}
+  m_AnchoredPosition: {x: 86, y: 254}
   m_SizeDelta: {x: 512.2446, y: 479.5763}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &578841098
@@ -577,6 +578,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578841096}
   m_CullTransparentMesh: 1
+--- !u!114 &578841100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578841096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &639899763
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,6 +743,7 @@ GameObject:
   - component: {fileID: 650513772}
   - component: {fileID: 650513774}
   - component: {fileID: 650513771}
+  - component: {fileID: 650513775}
   m_Layer: 5
   m_Name: Out
   m_TagString: Untagged
@@ -751,7 +768,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 220, y: -403.95697}
+  m_AnchoredPosition: {x: 233.52661, y: -261}
   m_SizeDelta: {x: 213.5891, y: 156.7467}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &650513771
@@ -860,6 +877,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732cd4aa66e948aeab3e4c84cc179bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KJS._00.Scripts.Out
+--- !u!114 &650513775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650513769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &806784515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,6 +1271,7 @@ GameObject:
   - component: {fileID: 1032455431}
   - component: {fileID: 1032455433}
   - component: {fileID: 1032455430}
+  - component: {fileID: 1032455434}
   m_Layer: 5
   m_Name: Pass
   m_TagString: Untagged
@@ -1263,7 +1296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -64.52661, y: -403.95697}
+  m_AnchoredPosition: {x: -51, y: -261}
   m_SizeDelta: {x: 213.5891, y: 156.7467}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1032455430
@@ -1372,6 +1405,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeafe3769dd6aa74f8dbba73c2da33ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pass
+--- !u!114 &1032455434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032455428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1084171277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,6 +1433,7 @@ GameObject:
   - component: {fileID: 1084171280}
   - component: {fileID: 1084171282}
   - component: {fileID: 1084171279}
+  - component: {fileID: 1084171283}
   m_Layer: 5
   m_Name: Question 2
   m_TagString: Untagged
@@ -1409,7 +1458,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 659, y: -244.17328}
+  m_AnchoredPosition: {x: 659, y: -273}
   m_SizeDelta: {x: 501.9868, y: 106.8455}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1084171279
@@ -1520,6 +1569,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Question
   text: {fileID: 2063928151}
   index: 1
+--- !u!114 &1084171283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084171277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1087081327
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,6 +2573,7 @@ GameObject:
   - component: {fileID: 2027789617}
   - component: {fileID: 2027789619}
   - component: {fileID: 2027789616}
+  - component: {fileID: 2027789620}
   m_Layer: 5
   m_Name: Question 3
   m_TagString: Untagged
@@ -2533,7 +2598,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 659, y: -424}
+  m_AnchoredPosition: {x: 659, y: -417}
   m_SizeDelta: {x: 501.9868, y: 106.8455}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2027789616
@@ -2644,6 +2709,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Question
   text: {fileID: 2063928151}
   index: 2
+--- !u!114 &2027789620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027789614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2057156843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,6 +2737,7 @@ GameObject:
   - component: {fileID: 2057156846}
   - component: {fileID: 2057156848}
   - component: {fileID: 2057156845}
+  - component: {fileID: 2057156849}
   m_Layer: 5
   m_Name: Question 1
   m_TagString: Untagged
@@ -2681,7 +2762,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 659, y: -66}
+  m_AnchoredPosition: {x: 659, y: -132}
   m_SizeDelta: {x: 501.9868, y: 106.8455}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2057156845
@@ -2792,6 +2873,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Question
   text: {fileID: 2063928151}
   index: 0
+--- !u!114 &2057156849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057156843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2063928149
 GameObject:
   m_ObjectHideFlags: 0
