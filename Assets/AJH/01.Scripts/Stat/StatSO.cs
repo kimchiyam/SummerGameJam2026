@@ -15,16 +15,26 @@ public class StatSO : ScriptableObject
 
     [Header("레벨업 비용")]
     public int baseCost = 100;
-    public float costMultiplier = 1.5f;
+    public int costStep = 50;
 
     [Header("런타임 상태")]
     public int currentLevel = 0;
 
     [System.NonSerialized] public UnityEvent onLevelUp = new UnityEvent();
 
-    public float CurrentValue => baseValue + valuePerLevel * currentLevel;
+    public float CurrentValue => baseValue;
 
-    public int CurrentCost => Mathf.RoundToInt(baseCost * Mathf.Pow(costMultiplier, currentLevel));
+    public int CurrentCost
+    {
+        get
+        {
+            int raw = baseCost + costStep * currentLevel * (currentLevel + 1) / 2;
+            int round = raw < 1000 ? 100
+                      : raw < 10000 ? 500
+                      : 1000;
+            return Mathf.RoundToInt(raw / (float)round) * round;
+        }
+    }
 
     public bool TryUpgrade(ref int gold)
     {
@@ -33,6 +43,7 @@ public class StatSO : ScriptableObject
 
         gold -= cost;
         currentLevel++;
+        baseValue += valuePerLevel;
         onLevelUp?.Invoke();
         return true;
     }

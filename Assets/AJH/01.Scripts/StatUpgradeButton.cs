@@ -40,13 +40,12 @@ public class StatUpgradeButton : MonoBehaviour
         if (stat == null) return;
 
         nameText.text = stat.statName;
-        levelText.text = $"Lv.{stat.currentLevel}";
+        levelText.text = $"{stat.baseValue}";   // Lv → baseValue
         costText.text = $"{stat.CurrentCost} G";
 
         if (iconImage != null && stat.icon != null)
             iconImage.sprite = stat.icon;
 
-        // 골드 부족하면 회색
         button.interactable = coinManager.TotalCoin >= stat.CurrentCost;
     }
 }
