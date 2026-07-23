@@ -8,8 +8,16 @@ namespace KSM.Scripts.Planet
  
         void OnMouseDown()
         {
-            // 클릭하면 오른쪽 침략 패널을 띄운다
+            // UI 위를 클릭한 경우는 무시 (패널 버튼 누를 때 행성이 같이 클릭되는 것 방지)
+            if (UnityEngine.EventSystems.EventSystem.current != null &&
+                UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
+                return;
+ 
+            // 1) 오른쪽 침략 패널 띄우기
             InvadePanelUI.Instance.Show(planetName);
+ 
+            // 2) 카메라가 이 행성을 따라가게
+            PlanetCameraController.Instance.FocusOn(transform);
         }
     }
     
