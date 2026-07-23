@@ -2,20 +2,22 @@ using UnityEngine;
 
 public class CoinManager : MonoBehaviour
 {
-    [SerializeField] private int totalCoin = 0;
-    public int TotalCoin => totalCoin;
+    public static CoinManager instance;
+    [field : SerializeField] public int TotalCoin { get; private set; }
 
-    public void AddCoin(int amount)
+    private void Awake()
     {
-        if (amount <= 0) return;
-        totalCoin += amount;
+        instance = this;
+    }
+    
+    public void AddCoin(int plus)
+    {
+        if (plus <= 0) return;
+        TotalCoin += plus;
     }
 
-    public bool TryBuyStat(StatSO stat)
+    public void MinusCoin(int minus)
     {
-        int gold = totalCoin;
-        bool success = stat.TryUpgrade(ref gold);
-        if (success) totalCoin = gold;
-        return success;
+        TotalCoin -= minus;
     }
 }
