@@ -19,6 +19,24 @@ public class HomeUIManager : MonoBehaviour
     [SerializeField] private float moveDuration2 = 1f;
     private bool canClick = true;
 
+    [Header("Skin")]
+    [SerializeField] private GameObject AlionSkin;
+    [SerializeField] private Image SkinSettingImg;
+    [SerializeField] private float moveDistance3 = 443f;
+    [SerializeField] private float moveDuration3 = 1f;
+    [SerializeField] private Sprite[] skinSprites;
+    private bool canClick1 = true;
+
+    private SpriteRenderer targetRenderer;
+    //[SerializeField] private  ParticleSystem myParticle;
+
+    private void Awake()
+    {
+        if (AlionSkin != null)
+        {
+            targetRenderer = AlionSkin.GetComponent<SpriteRenderer>();
+        }
+    }
     public void OnStart()
     {
         if (SceneChangeImg == null) return;
@@ -49,6 +67,7 @@ public class HomeUIManager : MonoBehaviour
     public void SettingOff()
     {
         if (SettingImg == null) return;
+        if (canClick) return;
 
         SettingImg.rectTransform.DOAnchorPosX(moveDistance2, moveDuration2)
            .SetRelative()
@@ -60,5 +79,68 @@ public class HomeUIManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void OnSkinSetting()
+    {
+        if (SkinSettingImg == null) return;
+        if (!canClick1) return;
 
+
+        SkinSettingImg.rectTransform.DOAnchorPosY(moveDistance3, moveDuration2)
+           .SetRelative()
+           .SetEase(Ease.OutQuad);
+        canClick1 = false;
+    }
+    public void SetFullScreen(bool isFullScreen)
+    {
+        Screen.fullScreen = isFullScreen;
+    }
+    public void OffSkinSetting()
+    {
+        if (SkinSettingImg == null) return;
+        if (canClick1) return;
+
+        SkinSettingImg.rectTransform.DOAnchorPosY(-moveDistance3, moveDuration2)
+           .SetRelative()
+           .SetEase(Ease.OutQuad);
+        canClick1 = true;
+    }
+
+    private void ChangeSkin(int index)
+    {
+        if (skinSprites == null || index < 0 || index >= skinSprites.Length) return;
+
+        if (targetRenderer != null)
+        {
+            targetRenderer.sprite = skinSprites[index];     
+        }
+    }
+
+    public void Skin1()
+    {
+        ChangeSkin(0);
+       
+    }
+
+    public void Skin2()
+    {
+        ChangeSkin(1);
+        
+    }
+
+    public void Skin3()
+    {
+        ChangeSkin(2);
+        
+    }
+
+    public void Skin4()
+    {
+        ChangeSkin(3);
+        
+    }
+
+    //public void PlayEffect()
+    //{
+    //    myParticle.Play();
+    //}
 }

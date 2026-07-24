@@ -31,12 +31,13 @@ public class CutsceneManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(PlayCutsceneRoutine());
-        
     }
 
     private IEnumerator PlayCutsceneRoutine()
     {
-        image.DOFade(0, fadeDuration);
+        image.rectTransform.DOAnchorPosX(-1920, 1f)
+           .SetRelative()
+           .SetEase(Ease.OutQuad);
 
         for (int i = 0; i < cutscenes.Length; i++)
         {
@@ -70,5 +71,20 @@ public class CutsceneManager : MonoBehaviour
 
             yield return new WaitForSeconds(timePerScene);
         }
+        SceneChange();
     }
+
+    private void SceneChange()
+    {
+        image.rectTransform.DOAnchorPosX(1920, 1f)
+          .SetRelative()
+          .SetEase(Ease.OutQuad);
+    }
+
+
+    public void OnCklickSkip()
+    {
+        SceneChange();
+    }
+
 }
