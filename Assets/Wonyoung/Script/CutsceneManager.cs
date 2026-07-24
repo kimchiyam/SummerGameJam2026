@@ -18,7 +18,7 @@ public class CutsceneManager : MonoBehaviour
     [Header("UI 연결")]
     [SerializeField] private Image displayImage;
     [SerializeField] private TextMeshProUGUI displayText;
-
+   
     [Header("컷씬 설정")]
     [SerializeField] private float timePerScene = 5f;
     [SerializeField] private float typingDuration = 2f;
@@ -28,7 +28,7 @@ public class CutsceneManager : MonoBehaviour
     [SerializeField] private CutsceneScene[] cutscenes;
 
     [SerializeField]private Image image;
-
+    public int sceneNumber = 9;
     void Start()
     {
         StartCoroutine(PlayCutsceneRoutine());
@@ -83,7 +83,7 @@ public class CutsceneManager : MonoBehaviour
         .OnComplete(() =>
         {
 
-            SceneManager.LoadScene("Planet");
+            SceneManager.LoadScene(sceneNumber);
         });
     }
 

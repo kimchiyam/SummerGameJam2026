@@ -38,6 +38,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AJH/00.Scemes/PlanetReal.unity
     guid: 08eb2bc32619f9c4fa7e6a7056fb025a
+  - enabled: 1
+    path: Assets/Scenes/HappyEndingCutScene 1.unity
+    guid: cfdcf7a405a2f434bb86d2eaf4597c50
+  - enabled: 1
+    path: Assets/Scenes/BadEndingCutScene.unity
+    guid: 46bb0ee4de344834b9a8b18464a12e23
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

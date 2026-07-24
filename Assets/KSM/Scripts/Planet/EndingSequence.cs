@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace KSM.Scripts.Planet
@@ -42,7 +43,7 @@ namespace KSM.Scripts.Planet
         [Tooltip("폭발 후 대기 시간")]
         public float afterExplosionWait = 2f;
         [Tooltip("엔딩 씬 빌드 인덱스. -1이면 씬 이동 없음")]
-        public int endingSceneIndex = -1;
+        public static int endingSceneIndex = 12;
  
         bool playing;
         public GameObject line;
