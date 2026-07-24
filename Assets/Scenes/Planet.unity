@@ -6239,7 +6239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KSM.Scripts.Planet.PlanetOrbit
   sun: {fileID: 1429221788}
-  orbitSpeed: 13.1
+  orbitSpeed: 1.1
   selfRotateSpeed: 28
 --- !u!58 &723524081
 CircleCollider2D:

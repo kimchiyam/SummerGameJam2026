@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
+  m_Name: ParkChoonPar
+  m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
+  ailenName: "\uBC15\uCD98\uD314"
+  age: 55
+  race: "\uC778\uAC04"
+  address: "\uACBD\uAE30\uB3C4 \uC548\uC591\uC2DC"
+  icon: {fileID: 8166710274925509176, guid: 27b85de17b94a864a97abdf8ad74b5b2, type: 3}
+  isReal: 0
+  startScript: "\uC790\uAC00\uB3C4\uC5C6\uACE0...\uB300\uAE30\uC5C5\uB3C4 \uC544\uB2C8\uACE0...\uBA38\uB9AC\uB3C4
+    \uC5C6\uB124..."
+  scripts:
+  - "55\uC138\uB2E4 \uB299\uC5B4\uBCF4\uC774\uB0D0?"
+  - "\uBC15 \uCD98\uC790 \uD314\uC790 \uC774\uB2E4 \uC774\uC0C1\uD558\uB0D0?"
+  - "\uACBD\uAE30\uB3C4 \uC548\uC591\uC2DC \uC0B0\uB2E4"

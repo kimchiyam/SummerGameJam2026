@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Planet4
   m_EditorClassIdentifier: Assembly-CSharp::KSM.Scripts.Planet.PlanetSO
   sceneNumber: 5
-  planetName: "\uC624\uB85C\uC131 "
-  planetDescription: "\uAC00\uC7A5 \uC774\uC0C1\uC801\uC778 \uC624\uB85C\uB77C\uAC00
-    \uBCF4\uC778\uB2E4\uB294 \uC678\uACC4\uD589\uC131\uC774\uB2E4 \uADF8\uCE58\uB9CC
-    \uB9E4\uC6B0 \uB09C\uD3ED\uD55C \uC678\uACC4\uC778\uB4E4\uC774\uB9CE\uB2E4"
+  planetName: "\uAC70\uBD81\uC131"
+  planetDescription: "\uC815\uB9D0 \uB9E4\uC6B0 \uB290\uB9B0\uD589\uC131 \uACF5\uC804\uC8FC\uAE30\uAC00
+    10000\uC77C\uC774\uB2E4.             \uB09C\uBBFC\uB4E4\uB3C4 \uB9E4\uC6B0 \uB290\uB9AC\uB2E4\uACE0..."
   planetIcon: {fileID: 0}
   planetIndex: 3
