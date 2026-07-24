@@ -10,5 +10,7 @@ namespace KJS._06.SO
         public string race;
         public string address;
         public Sprite icon;
+        public string startScript;
+        public string[] scripts;
     }
 }
