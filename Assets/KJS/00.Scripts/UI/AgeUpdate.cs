@@ -9,7 +9,7 @@ namespace KJS._00.Scripts.UI
         private void Start()
         {
             ageText = GetComponent<TextMeshProUGUI>();
-            SystemManager.instance.onAilenChanged += AgeChange;
+            SystemManager.instance.OnAilenChanged += AgeChange;
         }
 
         public void AgeChange()

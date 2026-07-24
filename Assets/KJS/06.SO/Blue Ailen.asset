@@ -17,6 +17,7 @@ MonoBehaviour:
   race: "\uBE14\uB8E8\uC5D0\uC77C\uB9AC\uC5B8"
   address: "\uD654\uC131\uC2DC \uD1A0\uB2F9\uB3D9"
   icon: {fileID: -2615874204119335, guid: bc46bcd80f2edf4459166f61115a5715, type: 3}
+  isReal: 1
   startScript: "\uBE14\uB8E8\uBE14\uB8E8!"
   scripts:
   - "\uC804 12\uC0B4 \uC774\uC5D0\uC694."

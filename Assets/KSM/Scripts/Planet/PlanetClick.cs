@@ -1,22 +1,32 @@
+using System;
 using UnityEngine;
 
 namespace KSM.Scripts.Planet
 {
     public class PlanetClick : MonoBehaviour
     {
-        public string planetName = "수성"; // 인스펙터에서 행성 이름 입력
+        public PlanetSO planet;
+ 
+        [Tooltip("잠긴 행성도 클릭해서 정보를 볼 수 있게 할지")]
+        public bool allowClickOnLocked = true;
  
         void OnMouseDown()
         {
-            // UI 위를 클릭한 경우는 무시 (패널 버튼 누를 때 행성이 같이 클릭되는 것 방지)
             if (UnityEngine.EventSystems.EventSystem.current != null &&
                 UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
                 return;
  
-            // 1) 오른쪽 침략 패널 띄우기
-            InvadePanelUI.Instance.Show(planetName);
+            if (planet == null)
+            {
+                Debug.LogError(gameObject.name + " 의 planet SO가 비어있습니다.");
+                return;
+            }
  
-            // 2) 카메라가 이 행성을 따라가게
+            // 잠긴 행성 클릭을 막고 싶으면 여기서 차단
+            if (!allowClickOnLocked && !PlanetProgress.CanEnter(planet))
+                return;
+ 
+            InvadePanelUI.Instance.Show(planet);
             PlanetCameraController.Instance.FocusOn(transform);
         }
     }

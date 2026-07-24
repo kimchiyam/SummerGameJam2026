@@ -18,7 +18,7 @@ public class Question : MonoBehaviour
 
     public void TakeQustion()
     {   
-        if (SystemManager.instance.canMove)
+        if (SystemManager.instance.ageText.IsActive())
         {
             if (canAnswer)
             {

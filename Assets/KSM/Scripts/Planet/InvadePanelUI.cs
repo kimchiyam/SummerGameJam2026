@@ -1,43 +1,104 @@
+using System;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 namespace KSM.Scripts.Planet
 {
     public class InvadePanelUI : MonoBehaviour
     {
-        public static InvadePanelUI Instance; // 어디서든 접근하기 쉽게 싱글톤
+       public static InvadePanelUI Instance;
  
         [Header("UI 연결")]
-        public GameObject panel;           // 오른쪽 네모 패널 오브젝트
-        public TMP_Text planetNameText;    // "지구 침략하기" 같은 텍스트
+        public GameObject panel;
+        public TMP_Text planetNameText;
+        public TMP_Text descriptionText;
+        public TMP_Text statusText;        // "정복 완료" / "잠김" 등 상태 표시
+        public Button invadeButton;
  
-        string currentPlanet;
+        [Header("엔딩")]
+        [Tooltip("엔딩 씬의 빌드 인덱스")]
+        public int endingSceneIndex = 8;
+ 
+        PlanetSO currentPlanet;
  
         void Awake()
         {
             Instance = this;
-            panel.SetActive(false); // 시작할 땐 숨김
+            panel.SetActive(false);
         }
- 
-        // 행성을 클릭하면 호출됨
-        public void Show(string planetName)
+
+        public void Show(PlanetSO planet)
         {
-            currentPlanet = planetName;
-            planetNameText.text = planetName + " 침략하기";
+            currentPlanet = planet;
             panel.SetActive(true);
+ 
+            planetNameText.text = planet.planetName;
+ 
+            if (descriptionText != null)
+                descriptionText.text = planet.planetDescription;
+ 
+            bool canEnter = PlanetProgress.CanEnter(planet);
+ 
+            // 상태에 따라 표시 분기
+            if (PlanetProgress.IsCleared(planet))
+            {
+                if (statusText != null) statusText.text = "정복 완료";
+                statusText.color = Color.green;
+            }
+            else if (PlanetProgress.IsLocked(planet))
+            {
+                if (statusText != null) statusText.text = "잠김 - 이전 행성을 먼저 정복하세요";
+                statusText.color = Color.darkRed;
+            }
+            else
+            {
+                if (statusText != null) statusText.text = "침략 가능";
+                statusText.color = Color.white;
+            }
+ 
+            if (invadeButton != null)
+                invadeButton.interactable = canEnter;
         }
  
-        // 패널의 X(닫기) 버튼 OnClick에 연결
         public void Hide()
         {
             panel.SetActive(false);
+            currentPlanet = null;
+ 
+            if (PlanetCameraController.Instance != null)
+                PlanetCameraController.Instance.ResetView();
         }
  
-        // "침략하기" 버튼 OnClick에 연결
+        // 침략 버튼 OnClick에 연결 (매개변수 없음)
         public void OnInvadeButton()
         {
-            Debug.Log(currentPlanet + " 침략 시작!");
-            // TODO: 여기서 침략 씬 로드 or 침략 로직 실행
-            // 예: UnityEngine.SceneManagement.SceneManager.LoadScene("InvadeScene");
+            if (currentPlanet == null) return;
+ 
+            if (!PlanetProgress.CanEnter(currentPlanet))
+            {
+                Debug.Log($"{currentPlanet.planetName}은(는) 지금 진입할 수 없습니다.");
+                return;
+            }
+ 
+            PlanetSession.Current = currentPlanet;
+            SceneManager.LoadScene(currentPlanet.sceneNumber);
+        }
+ 
+        void Start()
+        {
+            // 태양계로 돌아왔을 때 모든 행성을 깼으면 엔딩으로
+            if (PlanetProgress.IsAllCleared)
+                EndingSequence.Instance.PlayEnding();
         }
     }
-}
+ 
+    /// <summary>
+    /// 씬을 넘어갈 때 "지금 들어간 행성"을 전달하는 통로
+    /// </summary>
+    public static class PlanetSession
+    {
+        public static PlanetSO Current;
+    }
+    }
