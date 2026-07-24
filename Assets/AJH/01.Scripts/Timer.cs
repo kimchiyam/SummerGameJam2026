@@ -18,6 +18,8 @@ public class Timer : MonoBehaviour
         _isPlaying = true;
         _timeLength = time;
         _currentTime = 0f;
+        if (_timeText != null) _timeText.gameObject.SetActive(true);  // 추가
+        UpdateText();
     }
 
     public void Pause()
@@ -73,6 +75,7 @@ public class Timer : MonoBehaviour
         {
             _isPlaying = false;
             _currentTime = 0f;      // 미리 초기화
+            if (_timeText != null) _timeText.gameObject.SetActive(false);
             UpdateText();           // 텍스트도 초기 상태(12 PM)로
             OnTimerEnd?.Invoke();
             return;
