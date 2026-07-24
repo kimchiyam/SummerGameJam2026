@@ -1422,6 +1422,7 @@ RectTransform:
   - {fileID: 650513770}
   - {fileID: 578841097}
   - {fileID: 575974805}
+  - {fileID: 1170986543}
   - {fileID: 1460917117}
   - {fileID: 2063928150}
   m_Father: {fileID: 0}
@@ -1467,6 +1468,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &344073609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 344073610}
+  m_Layer: 0
+  m_Name: PassPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &344073610
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344073609}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.71, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &364337517
 GameObject:
   m_ObjectHideFlags: 0
@@ -5641,6 +5673,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160171195}
   m_CullTransparentMesh: 1
+--- !u!1 &1170986542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1170986543}
+  - component: {fileID: 1170986545}
+  - component: {fileID: 1170986544}
+  m_Layer: 5
+  m_Name: StartPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1170986543
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170986542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 260718026}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 86, y: 935}
+  m_SizeDelta: {x: 512.2446, y: 679.21}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1170986544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170986542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.7610062, g: 0.5958733, b: 0.09333085, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1170986545
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170986542}
+  m_CullTransparentMesh: 1
 --- !u!1 &1194144829
 GameObject:
   m_ObjectHideFlags: 0
@@ -7216,11 +7323,15 @@ MonoBehaviour:
   - {fileID: 7110969564453675968, guid: 23dbef164f8c2ad4e9bd412c88d7e621, type: 3}
   - {fileID: 7110969564453675968, guid: 1b48a639b578f444ab7dae61fbbe7a0c, type: 3}
   currentailen: {fileID: 0}
-  originPos: {fileID: 446958482}
+  spawnPos: {fileID: 1478571083}
+  originPos: {fileID: 446958483}
+  passExitPos: {fileID: 344073610}
+  outExitPos: {fileID: 1478571083}
   real: 0
   canMove: 0
   id: {fileID: 578841097}
   idOriginPos: {fileID: 575974805}
+  idStartPos: {fileID: 1170986543}
   ageText: {fileID: 2063928151}
 --- !u!4 &1478571083
 Transform:
@@ -10300,6 +10411,7 @@ SceneRoots:
   - {fileID: 260718026}
   - {fileID: 980808408}
   - {fileID: 446958483}
+  - {fileID: 344073610}
   - {fileID: 1478571083}
   - {fileID: 980453693}
   - {fileID: 1280327809}
