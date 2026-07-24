@@ -9,7 +9,7 @@ namespace KJS._00.Scripts.UI
         private void Start()
         {
             raceText = GetComponent<TextMeshProUGUI>();
-            SystemManager.instance.onAilenChanged += RaceChange;
+            SystemManager.instance.OnAilenChanged += RaceChange;
         }
 
         public void RaceChange()
