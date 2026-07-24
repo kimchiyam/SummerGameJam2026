@@ -18,6 +18,8 @@ public class Timer : MonoBehaviour
         _isPlaying = true;
         _timeLength = time;
         _currentTime = 0f;
+        if (_timeText != null) _timeText.gameObject.SetActive(true);  // 추가
+        UpdateText();
     }
 
     public void Pause()
@@ -37,13 +39,10 @@ public class Timer : MonoBehaviour
         // 진행도 0~1
         float progress = _timeLength > 0 ? _currentTime / _timeLength : 0f;
 
-        // 12 AM(밤 12시) 시작 → 6 AM 종료, 총 6시간
         int hour = Mathf.FloorToInt(progress * 6f);
         if (hour >= 6) hour = 6;
-
-        // 12, 1, 2, 3, 4, 5, 6 AM
         int displayHour = (hour == 0) ? 12 : hour;
-        _timeText.text = $"{displayHour} AM";
+        _timeText.text = $"{displayHour} PM";
     }
 
     private void Update()
@@ -75,7 +74,11 @@ public class Timer : MonoBehaviour
         if (_currentTime >= _timeLength)
         {
             _isPlaying = false;
+            _currentTime = 0f;      // 미리 초기화
+            if (_timeText != null) _timeText.gameObject.SetActive(false);
+            UpdateText();           // 텍스트도 초기 상태(12 PM)로
             OnTimerEnd?.Invoke();
+            return;
         }
         UpdateText();
     }

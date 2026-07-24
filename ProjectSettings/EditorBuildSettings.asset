@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Wonyoung/Scene/HomeScene.unity
     guid: dc0fa8f725490e14388e7b03d118ea62
   - enabled: 1
-    path: Assets/AJH/00.Scemes/New Folder/1.unity
-    guid: 6ad243aec6c5e32469663f67d313a7c4
+    path: Assets/Scenes/1.unity
+    guid: 91869bcc41df021489db56a66342f4d0
   - enabled: 1
     path: Assets/Scenes/2.unity
     guid: 99cd6974a00febe4bb6c49ae85425fbb
