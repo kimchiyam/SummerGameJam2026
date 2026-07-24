@@ -30,12 +30,11 @@ public class SystemManager : MonoBehaviour
 
     public TextMeshProUGUI ageText;
 
-    // ===============================
-    // 새로 추가
-    // ===============================
-    private readonly List<int> spawnedIndexes = new();
+    // 이미 등장한 외계인
+    private readonly HashSet<int> spawnedIndexes = new();
+
+    // 마지막에 등장한 외계인
     private int lastSpawnIndex = -1;
-    // ===============================
 
     private void Awake()
     {
@@ -68,7 +67,7 @@ public class SystemManager : MonoBehaviour
 
         int randomIndex;
 
-        // 아직 안 나온 외계인
+        // 아직 등장하지 않은 외계인
         List<int> newIndexes = new();
 
         for (int i = 0; i < ailens.Length; i++)
@@ -77,35 +76,27 @@ public class SystemManager : MonoBehaviour
                 newIndexes.Add(i);
         }
 
-        bool spawnNew = newIndexes.Count > 0 && Random.value < 0.5f;
-
-        if (spawnNew)
+        // 아직 안 나온 외계인이 있다면
+        if (newIndexes.Count > 0)
         {
-            // 새로운 외계인
             randomIndex = newIndexes[Random.Range(0, newIndexes.Count)];
+
+            spawnedIndexes.Add(randomIndex);
         }
         else
         {
-            // 기존 외계인
-            List<int> oldIndexes = new();
+            // 모두 한 번씩 나왔으면
+            // 마지막 외계인만 제외
+            List<int> candidates = new();
 
-            foreach (int index in spawnedIndexes)
+            for (int i = 0; i < ailens.Length; i++)
             {
-                if (index != lastSpawnIndex)
-                    oldIndexes.Add(index);
+                if (i != lastSpawnIndex)
+                    candidates.Add(i);
             }
 
-            // 처음에는 기존 외계인이 없을 수도 있음
-            if (oldIndexes.Count == 0)
-            {
-                oldIndexes = newIndexes;
-            }
-
-            randomIndex = oldIndexes[Random.Range(0, oldIndexes.Count)];
+            randomIndex = candidates[Random.Range(0, candidates.Count)];
         }
-
-        if (!spawnedIndexes.Contains(randomIndex))
-            spawnedIndexes.Add(randomIndex);
 
         lastSpawnIndex = randomIndex;
 
@@ -144,6 +135,7 @@ public class SystemManager : MonoBehaviour
         id.DOAnchorPos(idOriginPos.anchoredPosition, 0.4f)
             .OnComplete(() =>
             {
+                // 여권이 완전히 내려온 뒤에만 검문 가능
                 canMove = true;
             });
     }
@@ -168,6 +160,7 @@ public class SystemManager : MonoBehaviour
             .OnComplete(() =>
             {
                 Destroy(currentailen);
+
                 SpawnAilen();
             });
     }
