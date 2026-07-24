@@ -9,7 +9,7 @@ public class NameUpdate : MonoBehaviour
     private void Start()
     {
         nameText = GetComponent<TextMeshProUGUI>();
-        SystemManager.instance.onAilenChanged += NameChange;
+        SystemManager.instance.OnAilenChanged += NameChange;
     }
 
     public void NameChange()
