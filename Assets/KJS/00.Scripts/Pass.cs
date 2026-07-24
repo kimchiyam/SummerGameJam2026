@@ -11,6 +11,7 @@ namespace KJS._00.Scripts
                 if (SystemManager.instance.real)
                 {
                     Debug.Log("진짜 외계인을 패스했습니다.");
+                    
                 }
                 else
                 {
