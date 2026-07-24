@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d60488b1fd042bfbcdd3743df926c63, type: 3}
   m_Name: Planet6
   m_EditorClassIdentifier: Assembly-CSharp::KSM.Scripts.Planet.PlanetSO
-  sceneNumber: 5
-  planetName: "\uC608\uC655\uC131"
-  planetDescription: "\uC678\uACC4\uC778\uB4E4\uC774 \uAC00\uC7A5 \uB9CE\uC774 \uBA38\uBB34\uB294
-    \uBCC4\uC774\uB2E4 \uADF8\uCE58\uB9CC \uB098\uB984 \uC678\uACC4\uC778\uC218\uC5D0
-    \uBE44\uD574 \uBC94\uC8C4\uB294 \uC5C6\uB2E4\uACE0.."
+  sceneNumber: 7
+  planetName: "\uBC8C\uC37D"
+  planetDescription: "\uB9E4\uC6B0 \uBE60\uB978 \uD589\uC131\uC774\uB2E4 \uACF5\uC804\uC8FC\uAE30\uAC00
+    1\uC77C\uC774\uB77C\uACE0 \uD55C\uB2E4. \uB09C\uBBFC\uB4E4\uC740 \uD55C\uAD6D\uC778?\uC774\uB77C\uB294
+    \uC885\uC871\uC758 \uD6C4\uC190\uC774\uB77C\uACE0 \uD55C\uB2E4"
   planetIcon: {fileID: 0}
   planetIndex: 5
