@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d60488b1fd042bfbcdd3743df926c63, type: 3}
   m_Name: Planet4
   m_EditorClassIdentifier: Assembly-CSharp::KSM.Scripts.Planet.PlanetSO
-  sceneNumber: 5
+  sceneNumber: 4
   planetName: "\uAC70\uBD81\uC131"
   planetDescription: "\uC815\uB9D0 \uB9E4\uC6B0 \uB290\uB9B0\uD589\uC131 \uACF5\uC804\uC8FC\uAE30\uAC00
     10000\uC77C\uC774\uB2E4.             \uB09C\uBBFC\uB4E4\uB3C4 \uB9E4\uC6B0 \uB290\uB9AC\uB2E4\uACE0..."
