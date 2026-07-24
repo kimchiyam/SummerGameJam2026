@@ -12,7 +12,7 @@ public class DayManager : MonoBehaviour
     [SerializeField] int scenePlent;
 
     int _currentPlanetDay = 1;
-    int _totalDay = 14;
+    int _totalDay = 13;
 
     private void Awake()
     {
@@ -62,13 +62,14 @@ public class DayManager : MonoBehaviour
         else
         {
             _currentPlanetDay++;
+            StartNextDay(); 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.buildIndex <= 6) 
+        if (scene.buildIndex <= 7) 
         {
             StartNextDay();
         }

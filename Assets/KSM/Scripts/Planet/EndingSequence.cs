@@ -48,8 +48,17 @@ namespace KSM.Scripts.Planet
         public GameObject line;
  
         void Awake() { Instance = this; }
- 
+
         /// <summary>★ 엔딩 시작. 모든 행성 정복 후 호출 ★</summary>
+
+        private void Start()
+        {
+            if (PlanetProgress.IsAllCleared)
+            {
+                PlayEnding();
+            }
+        }
+
         public void PlayEnding()
         {
             if (playing) return;
