@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
+  m_Name: PingPong
+  m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
+  ailenName: "\uD0C1\uD0C1\uB9AC\uC5B8"
+  age: 55
+  race: "\uD551\uC131"
+  address: "\uD551\uC131 - \uD0C1\uAD6C\uB3C4"
+  icon: {fileID: 0}
+  isReal: 1
+  startScript: "\uD551\uD401\uD551\uD401!"
+  scripts:
+  - "\uC774\uC57C \uD0C1\uAD6C\uB97C \uD558\uB2C8\uAE4C 55\uC138\uAE4C\uC9C0 \uAC74\uAC15\uD558\uC9C0"
+  - "\uC774\uB984\uBD80\uD130 \uD0C1\uD0C1\uB9AC\uC5B8! \uD0C1\uAD6C\uC758 \uC2E0!"
+  - "\uD551\uC131\uC758 \uD0C1\uAD6C\uB3C4\uC5D0\uC11C \uADF8\uC800 \uD0C1\uAD6C
+    \uADF8 \uC790\uCCB4!! \uC544\uD573\uD558!"

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
+  m_Name: Matro
+  m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
+  ailenName: "\uBA54\uD2B8\uB85C\uB9E8"
+  age: 50
+  race: "\uB9E4\uD2B8\uB85C\uC871"
+  address: "\uAE00\uB77C\uC6B0\uD391\uD06C - \uC0AC\uBD84\uBA74"
+  icon: {fileID: 0}
+  isReal: 1
+  startScript: "\uB0A0\uC544\uAC00\uB294 \uB2A5\uB825\uC774 \uC5C6\uC5B4\uC84C\uC5B4\uC694.."
+  scripts:
+  - "50\uC0B4\uC785\uB2C8\uB2E4"
+  - "\uBAB0\uB77C\uC694? \uC800 \uBA54\uD2B8\uB85C\uB9E8!!"
+  - "\uAE00\uB77C\uC6B0\uD391\uD06C \uC0AC\uBD84\uBA74\uC774\uC8E0 .. \uC800\uD76C
+    \uACE0\uD5A5\uB3C4 \uCD08\uC2E0\uC131\uC73C\uB85C..."
