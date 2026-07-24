@@ -14,6 +14,7 @@ public class Question : MonoBehaviour
     private void Start()
     {
         _srr = GetComponent<Image>();
+        SystemManager.instance.OnAilenChanged += ResetQuestion;
     }
 
     public void TakeQustion()
@@ -43,5 +44,19 @@ public class Question : MonoBehaviour
             Debug.Log("넘어갈수 없습니다.");
         }
         
+        
+        
+    }
+    
+    private void ResetQuestion()
+    {
+        canAnswer = true;
+        _srr.color = Color.white;
+    }
+
+    private void OnDestroy()
+    {
+        if (SystemManager.instance != null)
+            SystemManager.instance.OnAilenChanged -= ResetQuestion;
     }
 }
