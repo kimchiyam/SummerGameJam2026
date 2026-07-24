@@ -28,6 +28,7 @@ namespace KSM.Scripts.Planet
             Instance = this;
             panel.SetActive(false);
         }
+        
 
         public void Show(PlanetSO planet)
         {
@@ -44,17 +45,17 @@ namespace KSM.Scripts.Planet
             // 상태에 따라 표시 분기
             if (PlanetProgress.IsCleared(planet))
             {
-                if (statusText != null) statusText.text = "정복 완료";
+                if (statusText != null) statusText.text = "구조완료";
                 statusText.color = Color.green;
             }
             else if (PlanetProgress.IsLocked(planet))
             {
-                if (statusText != null) statusText.text = "잠김 - 이전 행성을 먼저 정복하세요";
+                if (statusText != null) statusText.text = "잠김 - 이전 행성인들을 구조 하세요";
                 statusText.color = Color.darkRed;
             }
             else
             {
-                if (statusText != null) statusText.text = "침략 가능";
+                if (statusText != null) statusText.text = "구조 가능";
                 statusText.color = Color.white;
             }
  
