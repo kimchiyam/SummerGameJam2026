@@ -1,3 +1,5 @@
+using KSM.Scripts.Planet;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +12,7 @@ public class DayManager : MonoBehaviour
     [SerializeField] int scenePlent;
 
     int _currentPlanetDay = 1;
-    int _totalDay = 1;
+    int _totalDay = 14;
 
     private void Awake()
     {
@@ -49,18 +51,18 @@ public class DayManager : MonoBehaviour
 
     void EndDay()
     {
-        _totalDay++;
+        _totalDay--;
 
         if (_currentPlanetDay >= 2)
         {
             _currentPlanetDay = 1;
-            SceneManager.LoadScene(scenePlent);
+            var psm = FindObjectOfType<PlanetSceneManager>();
+            if (psm != null) psm.OnPlanetCleared();  // ¾À ÀÌµ¿Àº ¾ê°¡ ÇÔ
         }
         else
         {
             _currentPlanetDay++;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            StartNextDay();
         }
     }
 

@@ -3873,7 +3873,7 @@ GameObject:
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1478571082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3892,11 +3892,15 @@ MonoBehaviour:
   - {fileID: 7110969564453675968, guid: 23dbef164f8c2ad4e9bd412c88d7e621, type: 3}
   - {fileID: 7110969564453675968, guid: 1b48a639b578f444ab7dae61fbbe7a0c, type: 3}
   currentailen: {fileID: 0}
+  spawnPos: {fileID: 0}
   originPos: {fileID: 446958482}
+  passExitPos: {fileID: 0}
+  outExitPos: {fileID: 0}
   real: 0
   canMove: 0
   id: {fileID: 578841097}
   idOriginPos: {fileID: 575974805}
+  idStartPos: {fileID: 0}
   ageText: {fileID: 2063928151}
 --- !u!4 &1478571083
 Transform:
