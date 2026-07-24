@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace KSM.Scripts.Planet
 {
@@ -26,6 +27,12 @@ namespace KSM.Scripts.Planet
         {
             isOpen = false;
             settingView.SetActive(false);
+        }
+
+        public void ExitBtn()
+        {
+            SceneManager.LoadScene(0);
+            
         }
     }
 }
