@@ -16,7 +16,7 @@ MonoBehaviour:
   age: 6
   race: "\uD1A0\uC774\uD2B8"
   address: "\uC5D4\uB514\uC758 \uC9D1 - \uC637\uC7A5\uC548"
-  icon: {fileID: 0}
+  icon: {fileID: 4520741234511328204, guid: fe6a34faa8b973a4c8b78e9073e10d14, type: 3}
   isReal: 0
   startScript: "\uC03C\uC03C\uC03C\uC04D!"
   scripts:

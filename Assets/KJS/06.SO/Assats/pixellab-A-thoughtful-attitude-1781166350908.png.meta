@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 5592007775727b24fa4055fd09dee1d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1834601721837796138
+    second: pixellab-A-thoughtful-attitude-1781166350908_0
+  - first:
+      213: -7724399004702352271
+    second: pixellab-A-thoughtful-attitude-1781166350908_1
+  - first:
+      213: 148544677516119173
+    second: pixellab-A-thoughtful-attitude-1781166350908_2
+  - first:
+      213: -1451086445688467070
+    second: pixellab-A-thoughtful-attitude-1781166350908_3
+  - first:
+      213: 7548214206220026586
+    second: pixellab-A-thoughtful-attitude-1781166350908_4
+  - first:
+      213: 4872000589385274736
+    second: pixellab-A-thoughtful-attitude-1781166350908_5
+  - first:
+      213: -6065293185286360444
+    second: pixellab-A-thoughtful-attitude-1781166350908_6
+  - first:
+      213: -982755760908322165
+    second: pixellab-A-thoughtful-attitude-1781166350908_7
+  - first:
+      213: -5086374267146261885
+    second: pixellab-A-thoughtful-attitude-1781166350908_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixellab-A-thoughtful-attitude-1781166350908_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 262
+        width: 60
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b367ebb80d57910800000000000000
+      internalID: 1834601721837796138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-thoughtful-attitude-1781166350908_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 262
+        width: 58
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17cd555e70c6dc490800000000000000
+      internalID: -7724399004702352271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-thoughtful-attitude-1781166350908_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 262
+        width: 56
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c8f90e89cbf0200800000000000000
+      internalID: 148544677516119173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-thoughtful-attitude-1781166350908_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 134
+        width: 55
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281da5ad094bcdbe0800000000000000
+      internalID: -1451086445688467070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-thoughtful-attitude-1781166350908_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 134
+        width: 55
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad24d4214d4a0c860800000000000000
+      internalID: 7548214206220026586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-thoughtful-attitude-1781166350908_5
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 134
+        width: 55
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0759dcb19b2dc9340800000000000000
+      internalID: 4872000589385274736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-thoughtful-attitude-1781166350908_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 5
+        width: 55
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482b868bbffb3dba0800000000000000
+      internalID: -6065293185286360444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-thoughtful-attitude-1781166350908_7
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 5
+        width: 55
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a3712a7dc8c52f0800000000000000
+      internalID: -982755760908322165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-thoughtful-attitude-1781166350908_8
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 5
+        width: 55
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a2f048d819969b0800000000000000
+      internalID: -5086374267146261885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pixellab-A-thoughtful-attitude-1781166350908_0: 1834601721837796138
+      pixellab-A-thoughtful-attitude-1781166350908_1: -7724399004702352271
+      pixellab-A-thoughtful-attitude-1781166350908_2: 148544677516119173
+      pixellab-A-thoughtful-attitude-1781166350908_3: -1451086445688467070
+      pixellab-A-thoughtful-attitude-1781166350908_4: 7548214206220026586
+      pixellab-A-thoughtful-attitude-1781166350908_5: 4872000589385274736
+      pixellab-A-thoughtful-attitude-1781166350908_6: -6065293185286360444
+      pixellab-A-thoughtful-attitude-1781166350908_7: -982755760908322165
+      pixellab-A-thoughtful-attitude-1781166350908_8: -5086374267146261885
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

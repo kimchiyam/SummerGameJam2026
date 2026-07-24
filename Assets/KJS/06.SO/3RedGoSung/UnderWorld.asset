@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
+  m_Name: UnderWorld
+  m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
+  ailenName: "\uC81C\uC2A4\uD130"
+  age: 7
+  race: "\uC5B8\uB4DC\uB9AC\uC548"
+  address: "\uC5B8\uB354\uC6D4\uB4DC - 128-3"
+  icon: {fileID: -111577595974789674, guid: e9967f230fb6ae04aa55a4cdc3c80d34, type: 3}
+  isReal: 1
+  startScript: "\uC774\uB807\uAC8C \uB2E4\uC2DC\uBCF4\uB2E4\uB2C8 \uBC18\uAC00\uC6B4\uB370?
+    \uD558\uD558\uD558!!"
+  scripts:
+  - "7\uBD84\uBC84\uD168\uC11C 7\uC0B4\uC774\uC544!"
+  - "\uC81C\uC2A4\uD130\uB77C\uACE0\uD574!"
+  - "\uC5B8\uB354\uC6D4\uB4DC 128-3\uC5D0 \uC0B4\uC544 \uB180\uB7EC\uC640!!"

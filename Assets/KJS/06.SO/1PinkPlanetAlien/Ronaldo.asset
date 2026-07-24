@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
-  m_Name: RedAlien 4
+  m_Name: Ronaldo
   m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
-  ailenName: "\uB9CC\uC218\uB8E8\uC774"
+  ailenName: "\uD638\uB0A0\uB8E8"
   age: 76
   race: "\uB7ED\uC154\uB9AC\uC5B8"
   address: "\uC678\uC655\uC131 - \uBD80\uC720\uB85C"
-  icon: {fileID: 8166710274925509176, guid: 27b85de17b94a864a97abdf8ad74b5b2, type: 3}
+  icon: {fileID: -1357099476886040254, guid: c8c0cdc9848a81f4d832ccb76d8a2538, type: 3}
   isReal: 1
-  startScript: "\uB3C8\uC880 \uC4F0\uB824\uACE0 \uC5EC\uD589 \uC654\uC5C8\uB2E4"
+  startScript: "\uCD95\uAD6C \uADF8\uB9CC\uB450\uACE0 \uC5EC\uD589\uD558\uB294\uB370
+    \uC870\uB09C\uB2F9\uD588\uB2E4"
   scripts:
   - "76\uC0B4\uC784"
-  - "\uCC38....\uB9CC\uC218\uB8E8\uC774"
+  - "Siuuuuu \uD638\uB0A0\uB8E8"
   - "\uC5B4\uC6B0 \uADC0\uCC2E\uC544 \uC678\uC655\uC131 - \uBD80\uC720\uB85C"

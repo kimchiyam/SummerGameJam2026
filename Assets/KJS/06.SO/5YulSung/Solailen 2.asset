@@ -12,17 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
   m_Name: Solailen 2
   m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
-  ailenName: "\uC194\uAC00\uB808\uC624"
-  age: 100
+  ailenName: "\uC194\uB77C\uBE54"
+  age: 76
   race: "\uC194\uB77C\uB9AC\uC5B8"
   address: "\uC728\uC131 - \uD0DC\uC591\uB85C"
-  icon: {fileID: 0}
+  icon: {fileID: -3008708897306180985, guid: 3778d0c29a1d2034e8a39c0c3061e5ef, type: 3}
   isReal: 1
   startScript: "1\uB354\uD558\uAE30 1\uC740 \uACFC\uC5F0 2\uC778\uAC00"
   scripts:
-  - "100\uC0B4\uC774\uC624 \uC194\uB77C\uB9AC\uC5B8\uB4E4\uC740 \uBC1B\uB294\uB2E4\uACE0
-    \uB4E4\uC5C8\uC18C"
-  - "\uC194\uAC00\uB808\uC624\uC77C\uC138. \uACB0\uAD6D \uC0DD\uBA85\uB3C4 \uAD8C\uB825\uACFC
-    \uC790\uBCF8\uC5D0 \uD718\uB458\uB9AC\uB294 \uAD6C\uB824"
-  - "\uD0DC\uC591\uB85C\uC774\uC624 \uC6B0\uB9AC\uC758 \uC55E\uC5D0 \uBA78\uB9DD
-    \uC788\uC74C."
+  - "\uBE5B\uC774 \uBAA8\uC5EC"
+  - "\uD798\uC744 \uBAA8\uC544"
+  - "\uD0C0\uD30C \uD55C\uB2E4."

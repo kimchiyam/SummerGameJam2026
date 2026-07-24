@@ -16,10 +16,10 @@ MonoBehaviour:
   age: 22
   race: "\uB370\uBE0C\uC871"
   address: "\uAC1C\uBC1C\uC871 - \uCF54\uCF54\uC778\uC2DC"
-  icon: {fileID: 0}
+  icon: {fileID: 3853029850681796332, guid: 0271dbeb1286e0e4c8a1712996576e2f, type: 3}
   isReal: 0
-  startScript: "\uB9DB\uC788\uB294 \uB524\uC12C \uB4DC\uB9B4\uAE4C\uC694?"
+  startScript: "\uC7AD\uD31F\uC7AD\uD31F\uC7AD\uD31F"
   scripts:
   - "22\uC0B4\uC784"
   - "\uC57C\uB77C\uB9AC\uC5B8\uC778\uB370?"
-  - "\uBBF8\uC2DC\uC2DC\uD53C~"
+  - "\uCFE0\uC6B0\uC6B0\uC6B0\uC6B8"

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
-  m_Name: RedAlien 3
+  m_Name: ManSuRu
   m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
   ailenName: "\uB9CC\uC218\uB8E8\uC774"
   age: 76
   race: "\uB7ED\uC154\uB9AC\uC5B8"
   address: "\uC678\uC655\uC131 - \uBD80\uC720\uB85C"
-  icon: {fileID: 8166710274925509176, guid: 27b85de17b94a864a97abdf8ad74b5b2, type: 3}
+  icon: {fileID: -8227340420473070718, guid: 5209d0b08d996554ea8de16f417b6a8c, type: 3}
   isReal: 1
   startScript: "\uB3C8\uC880 \uC4F0\uB824\uACE0 \uC5EC\uD589 \uC654\uC5C8\uB2E4"
   scripts:

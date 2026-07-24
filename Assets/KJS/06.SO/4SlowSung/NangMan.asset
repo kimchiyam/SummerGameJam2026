@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
-  m_Name: Pingsung 1
+  m_Name: NangMan
   m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
   ailenName: "\uB0AD\uB9CC\uB9AC\uC5B8"
   age: 1000
   race: "\uC2E0\uB9AC\uC5B8"
   address: "\uC608\uB8E8\uC0B4\uB7A8 - \uC2DC\uC791\uACFC \uB05D"
-  icon: {fileID: 0}
+  icon: {fileID: -5611738799617095320, guid: 4d64bc8c768781d4b85780d530390369, type: 3}
   isReal: 0
   startScript: "\uB354\uC774\uC0C1 \uBBF8\uB828 \uC5C6\uB2E4"
   scripts:

@@ -5638,6 +5638,7 @@ MonoBehaviour:
   - sceneImage: {fileID: 0}
     sceneText: "\uD589\uC6B4\uC744 \uBE55\uB2C8\uB2E4."
   image: {fileID: 1987456641}
+  sceneNumber: 9
 --- !u!4 &1838537896
 Transform:
   m_ObjectHideFlags: 0
