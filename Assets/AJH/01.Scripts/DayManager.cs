@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DayManager : MonoBehaviour
 {
-    public static DayManager instance { get; private set; }
+    public static DayManager Instance { get; private set; }
 
     [SerializeField] Timer timer;
     [SerializeField] DayUI dayUI;
@@ -12,20 +13,29 @@ public class DayManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null && instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
 
-        instance = this;
+        Instance = this;
         DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
     {
         timer.OnTimerEnd += EndDay;
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
         StartNextDay();
+    }
+
+    private void OnDestroy()
+    {
+        if (timer != null)
+            timer.OnTimerEnd -= EndDay;
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     public void PauseTime() => timer.Pause();
@@ -39,11 +49,24 @@ public class DayManager : MonoBehaviour
     void EndDay()
     {
         _totalDay++;
-        if (_currentPlanetDay >= 2)
-            _currentPlanetDay = 1;
-        else
-            _currentPlanetDay++;
 
-        StartNextDay();
+        if (_currentPlanetDay >= 2)
+        {
+            _currentPlanetDay = 1;
+            SceneManager.LoadScene(7);
+        }
+        else
+        {
+            _currentPlanetDay++;
+            StartNextDay();
+        }
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.buildIndex <= 6) 
+        {
+            StartNextDay();
+        }
     }
 }
