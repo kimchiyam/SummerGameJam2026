@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [System.Serializable]
@@ -78,7 +79,12 @@ public class CutsceneManager : MonoBehaviour
     {
         image.rectTransform.DOAnchorPosX(1920, 1f)
           .SetRelative()
-          .SetEase(Ease.OutQuad);
+          .SetEase(Ease.OutQuad)
+        .OnComplete(() =>
+        {
+
+            SceneManager.LoadScene("Planet");
+        });
     }
 
 

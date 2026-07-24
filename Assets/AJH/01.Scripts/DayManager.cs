@@ -7,6 +7,7 @@ public class DayManager : MonoBehaviour
 
     [SerializeField] Timer timer;
     [SerializeField] DayUI dayUI;
+    [SerializeField] int scenePlent;
 
     int _currentPlanetDay = 1;
     int _totalDay = 1;
@@ -27,7 +28,10 @@ public class DayManager : MonoBehaviour
     {
         timer.OnTimerEnd += EndDay;
         SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
+    public void BeginDay()
+    {
         StartNextDay();
     }
 
@@ -53,11 +57,12 @@ public class DayManager : MonoBehaviour
         if (_currentPlanetDay >= 2)
         {
             _currentPlanetDay = 1;
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(scenePlent);
         }
         else
         {
             _currentPlanetDay++;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             StartNextDay();
         }
     }
