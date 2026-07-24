@@ -48,7 +48,7 @@ public class DayManager : MonoBehaviour
     private void StartNextDay()
     {
         Debug.Log($"[Day] StartNextDay ÁøÀÔ. dayUI null? {dayUI == null}");
-        dayUI.Show(_totalDay, () => timer.StartTimer(360f));
+        dayUI.Show(_totalDay, () => timer.StartTimer(240f));
     }
 
     void EndDay()
