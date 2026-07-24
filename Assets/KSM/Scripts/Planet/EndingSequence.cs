@@ -56,7 +56,7 @@ namespace KSM.Scripts.Planet
         {
             if (PlanetProgress.IsAllCleared)
             {
-                if (CountAlien.AlienCount >= 310)
+                if (CountAlien.AlienCount >= 60)
                 {
                     endingSceneIndex = 11;
                 }

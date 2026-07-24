@@ -5626,16 +5626,16 @@ MonoBehaviour:
   typingDuration: 2
   fadeDuration: 0.4
   cutscenes:
-  - sceneImage: {fileID: 0}
+  - sceneImage: {fileID: 657193517335828509, guid: e74548fee172dbe4e85414a225b0b947, type: 3}
     sceneText: "\uB2F9\uC2E0\uC774 \uC18D\uD574\uC788\uB294 \uD56D\uC131\uACC4 \uC544\uBC1C\uB860\uC740
       \n\uCD08\uC2E0\uC131 \uD3ED\uBC1C \uC704\uAE30\uC5D0 \uB193\uC5EC\uC788\uC2B5\uB2C8\uB2E4."
-  - sceneImage: {fileID: 0}
+  - sceneImage: {fileID: -2105408590869503322, guid: dc052cc5bbb74ef4c8576d0183fa3567, type: 3}
     sceneText: "\uB2F9\uC2E0\uC740 \uAD6C\uC870\uC120\uC758 \uD568\uC7A5\uC73C\uB85C\uC11C
       \n\uB09C\uBBFC\uB4E4\uC744 \uAD6C\uC870\uD574\uC57C\uD569\uB2C8\uB2E4."
-  - sceneImage: {fileID: 0}
+  - sceneImage: {fileID: 6356433420264838259, guid: fc17b9c6654319d4aa9fbd3ecefbe829, type: 3}
     sceneText: "\uC120\uD0DD\uC744 \uC2E0\uC911\uD788 \uD558\uC2ED\uC2DC\uC624.\r\n\uC120\uD0DD\uC740
       \uB418\uB3CC\uB9B4\uC218 \uC5C6\uC2B5\uB2C8\uB2E4."
-  - sceneImage: {fileID: 0}
+  - sceneImage: {fileID: -2071889403186281294, guid: 5dc498e48cbe15840ad288d83091c3e8, type: 3}
     sceneText: "\uD589\uC6B4\uC744 \uBE55\uB2C8\uB2E4."
   image: {fileID: 1987456641}
   sceneNumber: 9
