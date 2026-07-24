@@ -85,13 +85,6 @@ namespace KSM.Scripts.Planet
             PlanetSession.Current = currentPlanet;
             SceneManager.LoadScene(currentPlanet.sceneNumber);
         }
- 
-        void Start()
-        {
-            // 태양계로 돌아왔을 때 모든 행성을 깼으면 엔딩으로
-            if (PlanetProgress.IsAllCleared)
-                EndingSequence.Instance.PlayEnding();
-        }
     }
  
     /// <summary>

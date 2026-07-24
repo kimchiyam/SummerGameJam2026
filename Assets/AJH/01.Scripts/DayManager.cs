@@ -9,10 +9,11 @@ public class DayManager : MonoBehaviour
 
     [SerializeField] Timer timer;
     [SerializeField] DayUI dayUI;
+    [SerializeField] MiddleResult middleResultUI;
     [SerializeField] int scenePlent;
 
     int _currentPlanetDay = 1;
-    int _totalDay = 14;
+    int _totalDay = 13;
 
     private void Awake()
     {
@@ -46,18 +47,33 @@ public class DayManager : MonoBehaviour
 
     private void StartNextDay()
     {
+        Debug.Log($"[Day] StartNextDay 진입. dayUI null? {dayUI == null}");
         dayUI.Show(_totalDay, () => timer.StartTimer(360f));
     }
 
     void EndDay()
     {
         _totalDay--;
+        timer.Pause();
 
+        middleResultUI.Show(() =>
+        {
+            CountAlien.ResetDay();
+            ProceedAfterDay();
+        });
+    }
+
+    void ProceedAfterDay()
+    {
         if (_currentPlanetDay >= 2)
         {
             _currentPlanetDay = 1;
             var psm = FindObjectOfType<PlanetSceneManager>();
-            if (psm != null) psm.OnPlanetCleared();  // 씬 이동은 얘가 함
+            if (psm != null)
+            {
+                Debug.Log("[Day] OnPlanetCleared 호출");
+                psm.OnPlanetCleared();
+            }
         }
         else
         {
@@ -68,7 +84,17 @@ public class DayManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.buildIndex <= 6) 
+        if (dayUI == null) dayUI = FindObjectOfType<DayUI>();
+        if (middleResultUI == null) middleResultUI = FindObjectOfType<MiddleResult>();
+        var newTimer = FindObjectOfType<Timer>();
+        if (newTimer != null && newTimer != timer)
+        {
+            if (timer != null) timer.OnTimerEnd -= EndDay;
+            timer = newTimer;
+            timer.OnTimerEnd += EndDay;
+        }
+
+        if (int.TryParse(scene.name, out int planetNum) && planetNum >= 1 && planetNum <= 7)
         {
             StartNextDay();
         }
