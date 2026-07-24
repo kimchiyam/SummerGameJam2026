@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
+  m_Name: Loki1
+  m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
+  ailenName: "\uB85C\uD0A4"
+  age: 291
+  race: "\uC5D0\uB9AC\uB514\uC5B8"
+  address: "40\uC5D0\uB9AC\uB2E4\uB2C8 - \uC5D0\uB9AC\uB4DC"
+  icon: {fileID: 0}
+  isReal: 1
+  startScript: "&!&@(\uC778\uC0AC\uD560 \uC2DC\uAC04!)"
+  scripts:
+  - "*&#@$(291. \uB108\uB294\uBA87\uC0B4 \uC9C8\uBB38?)"
+  - "&*~!(\uC774\uB984\uC740..\uB85C\uD0A4! \uADF8\uB808\uC774\uC2A4\uAC00 \uC9C0\uC5B4\uC90C)"
+  - "**!&@(\uB0B4 \uACE0\uD5A5.40\uC5D0\uB9AC\uB2E4\uB2C8.\uC5D0\uB9AC\uB4DC.\uBA4B\uC9D0.\uC88B\uC74C)"

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
+  m_Name: LIe
+  m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
+  ailenName: "\uAD6C\uC6B4\uACE0\uAE30\uC5B8"
+  age: 94
+  race: "\uACE0\uAD6C\uB9AC\uC5B8"
+  address: "\uC801\uC0C9\uACE0\uC131 - \uACE0\uAD6C\uB9C8\uB85C"
+  icon: {fileID: 0}
+  isReal: 0
+  startScript: "\uC624\uC57C \uBC18\uAC11\uB2E4\uC789"
+  scripts:
+  - "\uB098? 76\uC0B4\uC774\uB2E4"
+  - "\uD551\uB9AC\uC5B8\uC774\uC694! \uC5C4\uB9C8 \uC5B8\uC81C \uC624\uC9C0?"
+  - "\uC800...\uC544\uB9C8 \uD551\uC131 \uD551\uD06C\uC2DC? \uC774\uC5D0\uC694 \uC57C\uD638!"

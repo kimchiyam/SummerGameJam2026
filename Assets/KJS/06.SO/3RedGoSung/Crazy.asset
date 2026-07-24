@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
+  m_Name: Crazy
+  m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
+  ailenName: "\uD06C\uC544\uB9AC\uC5B8"
+  age: 142
+  race: "\uB125\uC2A4\uB9AC\uC5B8"
+  address: "\uB125\uC2A4\uB85C\uC544 - \uB9B0\uBC84\uC2DC"
+  icon: {fileID: 0}
+  isReal: 0
+  startScript: "...\uC800..\uC815\uC2E0\uBCD1\uAC19\uC740\uAC70 \uC5C6\uC5B4\uC694..."
+  scripts:
+  - "\uC751 \uB108\uD0A4 142"
+  - "\u314B\u314B\u314B\u314B\u314B\u314B\u314B\u314B\u314B\u314B\u314B\uD06C\uC544\uB9AC\uC5B8\u314B\u314B\u314B"
+  - "\uB0B4\uAC00 \uC65C \uC54C\uB824\uC918\uC57C\uD574?? \uB125\uC2A4\uB85C\uC544
+    \uB9B0\uBC84\uC2DC"

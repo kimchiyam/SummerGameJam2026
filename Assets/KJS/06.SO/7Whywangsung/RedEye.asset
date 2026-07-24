@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
+  m_Name: RedEye
+  m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
+  ailenName: "\uD648\uB79C\uB354"
+  age: 54
+  race: "\uACE0\uAD6C\uB9AC\uC5B8"
+  address: "\uC544\uBC1C\uB860 \uC801\uC0C9\uACE0\uC131 - \uBC31\uC545\uAD00"
+  icon: {fileID: 0}
+  isReal: 0
+  startScript: "\uB09C \uCD5C\uAC15\uC774\uB2E4"
+  scripts:
+  - "54\uC0B4\uC774\uB2E4"
+  - "\uB0A0 \uBAA8\uB974\uB098? \uC9C0\uC838\uC918? \uD648\uB79C\uB354\uB2E4"
+  - "\uC801\uC0C9\uACE0\uC131\uC758 \uBC31\uC545\uAD00\uC744 \uCC28\uC9C0\uD558\uACE0\uC788\uC9C0"
