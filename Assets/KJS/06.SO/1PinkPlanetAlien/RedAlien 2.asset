@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
+  m_Name: RedAlien 2
+  m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
+  ailenName: "\uD638\uBA74\uBCF4"
+  age: 18
+  race: "\uD48B\uBCFC\uB9AC\uC5B8"
+  address: "LA\uC131 - \uC2F8\uC6CC\uB85C 1 - 0"
+  icon: {fileID: 8166710274925509176, guid: 27b85de17b94a864a97abdf8ad74b5b2, type: 3}
+  isReal: 1
+  startScript: "\uC6D0\uC815\uAC10\uB3C5\uC73C\uB85C \uC654\uC2B5\uB2C8\uB2E4"
+  scripts:
+  - "18\uC0B4. \uC81C\uC804\uB7B5\uC740 \uD2C0\uB9AC\uC9C0 \uC54A\uC558\uC5B4\uC694"
+  - "\uD638\uBA85\uBCF4\uC785\uB2C8\uB2E4. \uBB58 \uC798\uBABB\uD588\uC8E0?"
+  - "LA\uC131 - \uC2F8\uC6CC\uB85C 1 - 0 \uC0BD\uB2C8\uB2E4"
