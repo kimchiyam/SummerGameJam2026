@@ -1,11 +1,14 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class Timer : MonoBehaviour
 {
     [SerializeField]float _timeLength;
     [SerializeField]float _currentTime;
+    [SerializeField] TMP_Text _timeText;
     bool _isPlaying;
 
     public event Action OnTimerEnd;
@@ -15,19 +18,32 @@ public class Timer : MonoBehaviour
         _isPlaying = true;
         _timeLength = time;
         _currentTime = 0f;
-        Debug.Log($"[Timer] StartTimer - {time}초 타이머 시작");
     }
 
     public void Pause()
     {
         _isPlaying = false;
-        Debug.Log($"[Timer] Pause - {_currentTime:F2}초에서 정지");
     }
 
     public void Resume()
     {
         _isPlaying = true;
-        Debug.Log($"[Timer] Resume - {_currentTime:F2}초에서 재개");
+    }
+
+    private void UpdateText()
+    {
+        if (_timeText == null) return;
+
+        // 진행도 0~1
+        float progress = _timeLength > 0 ? _currentTime / _timeLength : 0f;
+
+        // 12 AM(밤 12시) 시작 → 6 AM 종료, 총 6시간
+        int hour = Mathf.FloorToInt(progress * 6f);
+        if (hour >= 6) hour = 6;
+
+        // 12, 1, 2, 3, 4, 5, 6 AM
+        int displayHour = (hour == 0) ? 12 : hour;
+        _timeText.text = $"{displayHour} AM";
     }
 
     private void Update()
@@ -47,7 +63,6 @@ public class Timer : MonoBehaviour
             // E: 즉시 하루 끝내기
             if (kb.eKey.wasPressedThisFrame)
             {
-                Debug.Log("[Timer] 테스트: 강제 종료");
                 _currentTime = _timeLength;
             }
         }
@@ -60,8 +75,8 @@ public class Timer : MonoBehaviour
         if (_currentTime >= _timeLength)
         {
             _isPlaying = false;
-            Debug.Log($"[Timer] 타이머 종료! ({_timeLength}초 경과)");
             OnTimerEnd?.Invoke();
         }
+        UpdateText();
     }
 }
