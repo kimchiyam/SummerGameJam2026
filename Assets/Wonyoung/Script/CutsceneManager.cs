@@ -1,6 +1,8 @@
 using DG.Tweening;
 using System.Collections;
+using KSM.Scripts.Planet;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -31,6 +33,7 @@ public class CutsceneManager : MonoBehaviour
     public int sceneNumber = 9;
     void Start()
     {
+        PlanetProgress.ResetAll();
         StartCoroutine(PlayCutsceneRoutine());
     }
 
