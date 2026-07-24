@@ -43,7 +43,7 @@ namespace KSM.Scripts.Planet
         [Tooltip("폭발 후 대기 시간")]
         public float afterExplosionWait = 2f;
         [Tooltip("엔딩 씬 빌드 인덱스. -1이면 씬 이동 없음")]
-        public static int endingSceneIndex = 12;
+        public int endingSceneIndex = 12;
  
         bool playing;
         public GameObject line;
@@ -56,6 +56,14 @@ namespace KSM.Scripts.Planet
         {
             if (PlanetProgress.IsAllCleared)
             {
+                if (CountAlien.AlienCount >= 310)
+                {
+                    endingSceneIndex = 11;
+                }
+                else
+                {
+                    endingSceneIndex = 12;
+                }
                 PlayEnding();
             }
         }
