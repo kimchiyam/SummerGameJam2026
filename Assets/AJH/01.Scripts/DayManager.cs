@@ -28,12 +28,9 @@ public class DayManager : MonoBehaviour
     {
         timer.OnTimerEnd += EndDay;
         SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    public void BeginDay()
-    {
         StartNextDay();
     }
+
 
     private void OnDestroy()
     {

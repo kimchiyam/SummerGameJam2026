@@ -23,12 +23,13 @@ public class DayUI : MonoBehaviour
 
     public void Show(int Day, System.Action onComplete = null)
     {
+        Debug.Log($"[DayUI] slide:{_slideInDuration}, stay:{_stayDuration}, fade:{_fadeDuration}, hide:{_hidePosY}, show:{_showPosY}");
+
         _panel.gameObject.SetActive(true);
         _panelGroup.alpha = 1f;
         _dayText.text = $"{Day}일차";
         _rect.anchoredPosition = new Vector2(0, _hidePosY);
 
-        Time.timeScale = 0f;
 
         Sequence seq = DOTween.Sequence();
         seq.SetUpdate(true);
@@ -39,7 +40,6 @@ public class DayUI : MonoBehaviour
         seq.OnComplete(() =>
         {
             _panel.gameObject.SetActive(false);
-            Time.timeScale = 1f;
             onComplete?.Invoke();
         });
     }

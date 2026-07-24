@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -395,7 +395,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 31.0082, y: 31.0081}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &717385838
 MonoBehaviour:
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DayManager
   timer: {fileID: 1440774997}
   dayUI: {fileID: 1664675912}
-  scenePlent: 7
+  scenePlent: 9
 --- !u!4 &1079887092
 Transform:
   m_ObjectHideFlags: 0
@@ -607,8 +607,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 89.5
-  m_fontSizeBase: 89.5
+  m_fontSize: 40.38
+  m_fontSizeBase: 40.38
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
