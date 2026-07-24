@@ -7,7 +7,7 @@ public static class CountAlien
 
     public static int AlienCount { get; private set; }
     public static int TrueAlienCount => goodBoy;   // 진짜
-    public static int FalseAlienCount => badBoy;    // 가짜
+    public static int FalseAlienCount => badBoy;   // 가짜
 
     public static void TrueAlien()
     {
@@ -17,17 +17,16 @@ public static class CountAlien
 
     public static void FalseAlien(int minus)
     {
-        AlienCount -= minus;
+        AlienCount = Mathf.Max(0, AlienCount - minus); // 음수 방지
         badBoy++;
     }
 
     public static void MiddleCheck() { }
 
-    // 하루 단위로 리셋할지, 총합만 유지할지는 취향
     public static void ResetDay()
     {
         goodBoy = 0;
         badBoy = 0;
-        // AlienCount = 0;  // 총합도 매일 리셋하려면 주석 해제
+        // AlienCount = 0;
     }
 }
