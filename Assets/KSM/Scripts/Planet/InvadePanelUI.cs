@@ -44,14 +44,17 @@ namespace KSM.Scripts.Planet
             if (PlanetProgress.IsCleared(planet))
             {
                 if (statusText != null) statusText.text = "정복 완료";
+                statusText.color = Color.green;
             }
             else if (PlanetProgress.IsLocked(planet))
             {
                 if (statusText != null) statusText.text = "잠김 - 이전 행성을 먼저 정복하세요";
+                statusText.color = Color.darkRed;
             }
             else
             {
                 if (statusText != null) statusText.text = "침략 가능";
+                statusText.color = Color.white;
             }
  
             if (invadeButton != null)
