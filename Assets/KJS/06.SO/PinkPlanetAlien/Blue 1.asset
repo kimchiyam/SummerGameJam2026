@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
+  m_Name: Blue 1
+  m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
+  ailenName: "\uD30C\uB791\uC774"
+  age: 22
+  race: "\uBE14\uB8E8\uB9AC\uC5B8"
+  address: "\uD37C\uB801\uC131 - \uD478\uB8EC\uC8FC\uC2DC"
+  icon: {fileID: 8166710274925509176, guid: 27b85de17b94a864a97abdf8ad74b5b2, type: 3}
+  isReal: 0
+  startScript: "\uBC18\uAC11\uB2E4!!!!! \uC6B0\uC8FC\uC120 \uC8FC\uC720\uD558\uB294\uB370
+    \uB09C\uBBFC\uB418\uC5B4\uBC84\uB9BC"
+  scripts:
+  - "22\uC0B4\uC774\uB2E4"
+  - "\uD30C\uB791\uC774\uC785\uB2C8\uB2E4"
+  - "\uD37C\uB801\uC131\uC5D0 \uD478\uB8EC\uC8FC\uC2DC \uC0B0\uB2E4"
