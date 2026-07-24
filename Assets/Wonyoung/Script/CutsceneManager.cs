@@ -29,6 +29,7 @@ public class CutsceneManager : MonoBehaviour
 
     [SerializeField]private Image image;
     public int sceneNumber = 9;
+    private bool canClick = true;
     void Start()
     {
         StartCoroutine(PlayCutsceneRoutine());
@@ -90,7 +91,12 @@ public class CutsceneManager : MonoBehaviour
 
     public void OnCklickSkip()
     {
-        SceneChange();
+        if (canClick)
+        {
+            SceneChange();
+            canClick = false;
+        }
+        
     }
 
 }
