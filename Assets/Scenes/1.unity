@@ -7133,10 +7133,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SystemManager
   ailens:
-  - {fileID: 3167890298549661037, guid: c38cf44d50dcd7a4cb2b9e80ee5534d4, type: 3}
-  - {fileID: 5160128020981707616, guid: 9301e53f434885d46b1e631ebcaf3d19, type: 3}
-  - {fileID: 7110969564453675968, guid: 23dbef164f8c2ad4e9bd412c88d7e621, type: 3}
-  - {fileID: 7110969564453675968, guid: 1b48a639b578f444ab7dae61fbbe7a0c, type: 3}
+  - {fileID: 6455726925243788482, guid: 5f8291fd32020a34a88de2e678b8ca57, type: 3}
+  - {fileID: 6455726925243788482, guid: 64cbe7ae426d10043a46c44a52b7861f, type: 3}
+  - {fileID: 6455726925243788482, guid: e8c1af43e7bf2bb47bd41ef4d2e3c2e6, type: 3}
+  - {fileID: 6455726925243788482, guid: 597ac92f95eae23459985761b082ade7, type: 3}
+  - {fileID: 6455726925243788482, guid: 64f54de60bc1a8a4cafef24f715f9843, type: 3}
+  - {fileID: 6455726925243788482, guid: d47956184f1e40b40adcb37877a8fcff, type: 3}
+  - {fileID: 6455726925243788482, guid: 810e174818425be47ad75ebef4a94a73, type: 3}
+  - {fileID: 6455726925243788482, guid: b21b2946e3f8ee44ea95a41e35a28735, type: 3}
+  - {fileID: 6455726925243788482, guid: 94692ed72c083dc49b443a48016ef4c0, type: 3}
+  - {fileID: 6455726925243788482, guid: fb963cd1671462a44be635ba37ed1397, type: 3}
+  - {fileID: 6455726925243788482, guid: cb600beb58542cb4aaef3db5a072a33e, type: 3}
+  - {fileID: 6455726925243788482, guid: 25101524992e1574f9a3dafef53123fa, type: 3}
+  - {fileID: 6455726925243788482, guid: f6b284d696b405248b7cdb15cf4d6149, type: 3}
+  - {fileID: 6455726925243788482, guid: dbf322a2385ee3c43b8a57842ed232b1, type: 3}
+  - {fileID: 6455726925243788482, guid: 294f3534017a97d40b4e0ee9ae196cf9, type: 3}
+  - {fileID: 6455726925243788482, guid: ff09fbc62cff7c547a22aaa5677196c6, type: 3}
+  - {fileID: 6455726925243788482, guid: dead9a4d5b66336488bfec8bcd20f4b5, type: 3}
+  - {fileID: 6455726925243788482, guid: a59cb7c5ec3f7d344a69940371ac44b5, type: 3}
   currentailen: {fileID: 0}
   spawnPos: {fileID: 1478571083}
   originPos: {fileID: 446958483}

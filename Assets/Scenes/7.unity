@@ -7433,10 +7433,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SystemManager
   ailens:
-  - {fileID: 3167890298549661037, guid: c38cf44d50dcd7a4cb2b9e80ee5534d4, type: 3}
-  - {fileID: 5160128020981707616, guid: 9301e53f434885d46b1e631ebcaf3d19, type: 3}
-  - {fileID: 7110969564453675968, guid: 23dbef164f8c2ad4e9bd412c88d7e621, type: 3}
-  - {fileID: 7110969564453675968, guid: 1b48a639b578f444ab7dae61fbbe7a0c, type: 3}
+  - {fileID: 6455726925243788482, guid: 499af7684886de04e9e8176192cf0a85, type: 3}
+  - {fileID: 6455726925243788482, guid: 76994665d8a22cd489a9910c4ecc230c, type: 3}
+  - {fileID: 6455726925243788482, guid: 9a17636aa1039164b8d844364d546b5f, type: 3}
+  - {fileID: 6455726925243788482, guid: 61c105dcf259c494092962fb705adeb7, type: 3}
+  - {fileID: 6455726925243788482, guid: 202d81802472b95458324c99d4e122ef, type: 3}
+  - {fileID: 6455726925243788482, guid: d5474b7ab405fd14f90c99a554ea290b, type: 3}
+  - {fileID: 6455726925243788482, guid: 7bafbdd8c29238a49b4a74c55dc6d031, type: 3}
+  - {fileID: 6455726925243788482, guid: da174c6d7d999d942bd945aa75e4122a, type: 3}
+  - {fileID: 6455726925243788482, guid: 02a19ae10317a6743bd91d737d318abc, type: 3}
+  - {fileID: 6455726925243788482, guid: 59eb91d0a36d1dc4990a7f2eb3f7a8e0, type: 3}
+  - {fileID: 6455726925243788482, guid: 53d62f66342329540909bd30b6553efb, type: 3}
+  - {fileID: 6455726925243788482, guid: cf0893870fda8194da30d523c5a7f5d7, type: 3}
+  - {fileID: 6455726925243788482, guid: d62a10102d2bba446b53f571cf967c0e, type: 3}
   currentailen: {fileID: 0}
   spawnPos: {fileID: 1478571083}
   originPos: {fileID: 446958483}
