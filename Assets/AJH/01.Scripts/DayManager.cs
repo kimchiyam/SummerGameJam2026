@@ -76,6 +76,8 @@ public class DayManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+
+        _waitingForSceneLoad = false;   // 추가
         if (dayUI == null) dayUI = FindObjectOfType<DayUI>();
         if (middleResultUI == null) middleResultUI = FindObjectOfType<MiddleResult>();
         var newTimer = FindObjectOfType<Timer>();
@@ -92,14 +94,17 @@ public class DayManager : MonoBehaviour
         }
     }
 
+    bool _waitingForSceneLoad = false;
+
     IEnumerator ProceedAfterDayRoutine()
     {
-        bool goingToPlanet = (_currentPlanetDay >= 2);
+        // 1. 페이드 아웃
+        yield return Fade(0f, 1f);
 
-        if (goingToPlanet)
-            yield return Fade(0f, 1f);   // 행성씬 갈 때만 어두워짐
+        // 2. 씬 전환
+        _waitingForSceneLoad = true;
 
-        if (goingToPlanet)
+        if (_currentPlanetDay >= 2)
         {
             _currentPlanetDay = 1;
             var psm = FindObjectOfType<PlanetSceneManager>();
@@ -111,17 +116,19 @@ public class DayManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
-        yield return null;
+        // 3. 씬 로드가 실제로 끝날 때까지 대기
+        while (_waitingForSceneLoad) yield return null;
+        yield return null;   // 새 씬 초기화 한 프레임 여유
 
-        if (goingToPlanet)
-            yield return Fade(1f, 0f);
+        // 4. 페이드 인
+        yield return Fade(1f, 0f);
     }
 
     IEnumerator Fade(float from, float to)
     {
         if (fadeCanvas == null) yield break;
 
-        fadeCanvas.gameObject.SetActive(true);   // 시작할 때 켜기
+        fadeCanvas.gameObject.SetActive(true);
         fadeCanvas.alpha = from;
 
         float t = 0f;
@@ -133,6 +140,8 @@ public class DayManager : MonoBehaviour
         }
         fadeCanvas.alpha = to;
 
-        if (to <= 0f) fadeCanvas.gameObject.SetActive(false);   // 다 밝아지면 끄기
+        // 완전히 밝아졌을 때만(=페이드 인 끝) 끄기
+        // 페이드 아웃 끝났을 땐 검은 화면 유지해야 하므로 안 끔
+        if (to <= 0f) fadeCanvas.gameObject.SetActive(false);
     }
 }
