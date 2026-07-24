@@ -4479,8 +4479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ec0a63d9394de89cf889841c37a5eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KSM.Scripts.Planet.PlanetSceneManager
-  solarSystemSceneIndex: 7
-  endingSceneIndex: 8
+  solarSystemSceneIndex: 9
+  endingSceneIndex: 10
   returnDelay: 2
 --- !u!4 &980453693
 Transform:

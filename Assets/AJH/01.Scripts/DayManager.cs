@@ -1,3 +1,5 @@
+using KSM.Scripts.Planet;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -54,13 +56,13 @@ public class DayManager : MonoBehaviour
         if (_currentPlanetDay >= 2)
         {
             _currentPlanetDay = 1;
-            SceneManager.LoadScene(scenePlent);
+            var psm = FindObjectOfType<PlanetSceneManager>();
+            if (psm != null) psm.OnPlanetCleared();  // ¾À ÀÌµ¿Àº ¾ê°¡ ÇÔ
         }
         else
         {
             _currentPlanetDay++;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            StartNextDay();
         }
     }
 
