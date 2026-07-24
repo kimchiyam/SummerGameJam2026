@@ -10,7 +10,7 @@ public class DayManager : MonoBehaviour
     [SerializeField] int scenePlent;
 
     int _currentPlanetDay = 1;
-    int _totalDay = 1;
+    int _totalDay = 14;
 
     private void Awake()
     {
@@ -49,7 +49,7 @@ public class DayManager : MonoBehaviour
 
     void EndDay()
     {
-        _totalDay++;
+        _totalDay--;
 
         if (_currentPlanetDay >= 2)
         {
