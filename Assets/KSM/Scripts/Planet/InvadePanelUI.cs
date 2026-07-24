@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -27,7 +28,7 @@ namespace KSM.Scripts.Planet
             Instance = this;
             panel.SetActive(false);
         }
- 
+
         public void Show(PlanetSO planet)
         {
             currentPlanet = planet;
@@ -89,7 +90,7 @@ namespace KSM.Scripts.Planet
         {
             // 태양계로 돌아왔을 때 모든 행성을 깼으면 엔딩으로
             if (PlanetProgress.IsAllCleared)
-                SceneManager.LoadScene(endingSceneIndex);
+                EndingSequence.Instance.PlayEnding();
         }
     }
  

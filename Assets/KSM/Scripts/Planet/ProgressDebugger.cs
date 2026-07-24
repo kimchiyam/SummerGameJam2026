@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace KSM.Scripts.Planet
 {
@@ -12,6 +13,10 @@ namespace KSM.Scripts.Planet
  
         void Update()
         {
+            if (Keyboard.current.yKey.wasPressedThisFrame)
+            {
+                EndingSequence.Instance.PlayEnding();
+            }
             // 다음 행성 해금
             if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.N))
             {

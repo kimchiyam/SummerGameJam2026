@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d60488b1fd042bfbcdd3743df926c63, type: 3}
   m_Name: Planet7
   m_EditorClassIdentifier: Assembly-CSharp::KSM.Scripts.Planet.PlanetSO
-  sceneNumber: 7
+  sceneNumber: 6
   planetName: "\uC678\uC655\uC131"
   planetDescription: "\uBD80\uC790 \uC678\uACC4\uC778\uB4E4\uC774 \uB9CE\uC774\uC788\uB294\uACF3\uC774\uB2E4
     \uC0AC\uB78C\uC774 \uC801\uC9C0\uB9CC \uC54C\uC218\uC5C6\uB294 \uC5EC\uB7EC \uC678\uACC4
     \uBC94\uC8C4\uC790\uB4E4\uC774 \uB9CE\uC774 \uC788\uB2E4.."
   planetIcon: {fileID: 0}
-  canjoinPlanet: 1
   planetIndex: 6
