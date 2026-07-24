@@ -3553,6 +3553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DayManager
   timer: {fileID: 1402943498}
   dayUI: {fileID: 2000174811}
+  scenePlent: 7
 --- !u!4 &1280327809
 Transform:
   m_ObjectHideFlags: 0
