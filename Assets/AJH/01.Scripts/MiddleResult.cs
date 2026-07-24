@@ -22,9 +22,9 @@ public class MiddleResult : MonoBehaviour
     {
         _onConfirm = onConfirm;
 
-        _trueAlien.text = $"진짜 외계인: {CountAlien.TrueAlienCount}";
-        _falseAlien.text = $"가짜 외계인: {CountAlien.FalseAlienCount}";
-        _totalAlien.text = $"총 외계인 수: {CountAlien.AlienCount}";
+        _trueAlien.text = $"들어온 진짜 외계인: {CountAlien.TrueAlienCount}";
+        _falseAlien.text = $"들어온 가짜 외계인: {CountAlien.FalseAlienCount}";
+        _totalAlien.text = $"총 들어온 외계인 수: {CountAlien.AlienCount}";
 
         _panel.SetActive(true);
     }
