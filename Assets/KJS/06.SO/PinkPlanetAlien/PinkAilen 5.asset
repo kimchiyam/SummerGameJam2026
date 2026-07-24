@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
   m_Name: PinkAilen 5
   m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
-  ailenName: "\uD551\uD48D\uD401\uD321\uD391"
-  age: 32
+  ailenName: "\uD53D\uC2A4\uC138\uBE10"
+  age: 67
   race: "\uD551\uD06C\uC5D0\uC77C\uB9AC\uC5B8"
-  address: "\uC544\uBC1C\uB860 \uD551\uC131 - \uAD6C\uB77C\uC2DC"
+  address: "\uC544\uBC1C\uB860 \uD551\uC131 - \uC7BC\uBBFC\uAD70"
   icon: {fileID: -6920274672158514710, guid: 716fa2f963c05594aa86e2480f783296, type: 3}
-  isReal: 0
-  startScript: "\uC548\uB155\uD558\uC138\uC694"
+  isReal: 1
+  startScript: 6767676767676767
   scripts:
-  - "32\uC0B4 \uC785\uB2C8\uB2E4"
-  - "\uD551\uD401\uD48D\uD321\uD391 \uC785\uB2C8\uB2E4 \uCABC\uAF3C \uC5B4\uB835\uC8E0"
-  - "\uAD6C\uB77C\uC2DC \uC0BD\uB2C8\uB2E4"
+  - 67
+  - "5252!! \uB098\uD55C\uD14C \uAD00\uC2EC\uC788\uB098! \uD551\uC2DD\uC774\uB77C\uAD6C!!"
+  - "\uD6C4\uD6D7..\uC774\uC820 \uC9D1\uAE4C\uC9C0! \uBD80\uB18D\uC2DC\uB77C\uAD6C!!"

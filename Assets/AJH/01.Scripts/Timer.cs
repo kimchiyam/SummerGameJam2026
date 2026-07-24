@@ -43,6 +43,7 @@ public class Timer : MonoBehaviour
                 else Resume();
             }
 
+
             // E: 즉시 하루 끝내기
             if (kb.eKey.wasPressedThisFrame)
             {
