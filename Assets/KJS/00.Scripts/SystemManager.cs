@@ -11,14 +11,16 @@ public class SystemManager : MonoBehaviour
     public GameObject currentailen;
     private int randomIndex;
     
-    public event Action onAilenChanged;
+    public event Action OnAilenChanged;
     public static SystemManager instance;
     public GameObject originPos;
 
     public bool real;
     public bool canMove = false;
+    [SerializeField] private RectTransform id;
+    [SerializeField] private RectTransform idOriginPos;
 
-    [SerializeField] private TextMeshProUGUI ageText;
+    public TextMeshProUGUI ageText;
     private void Awake()
     {
         if (instance == null)
@@ -42,15 +44,18 @@ public class SystemManager : MonoBehaviour
 
     private async void PopAilen(int index)
     {
-        await Task.Delay(4000);
-        canMove = true; real = true;
+        await Task.Delay(3500);
+        canMove = true;
+        real = currentailen.GetComponent<Ailen>()._ailenSo.isReal;
         FirstDialog();
         currentailen.SetActive(true);
         currentailen.gameObject.transform.DOMove(originPos.transform.position , 0.2f).OnComplete(() =>
         {
-            onAilenChanged?.Invoke();
+            OnAilenChanged?.Invoke();
         });
-        
+        await Task.Delay(2000);
+        id.DOAnchorPos(idOriginPos.anchoredPosition, 0.4f);
+
     }
     
     public async void FirstDialog()

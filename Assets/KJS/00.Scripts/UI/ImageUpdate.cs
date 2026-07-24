@@ -10,7 +10,7 @@ namespace KJS._00.Scripts.UI
         private void Start()
         {
             imageha = GetComponent<Image>();
-            SystemManager.instance.onAilenChanged += ImageChange;
+            SystemManager.instance.OnAilenChanged += ImageChange;
         }
 
         public void ImageChange()

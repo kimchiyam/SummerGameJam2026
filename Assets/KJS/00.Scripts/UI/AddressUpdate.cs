@@ -9,7 +9,7 @@ namespace KJS._00.Scripts.UI
         private void Start()
         {
             addressText = GetComponent<TextMeshProUGUI>();
-            SystemManager.instance.onAilenChanged += AddressChange;
+            SystemManager.instance.OnAilenChanged += AddressChange;
         }
 
         public void AddressChange()
