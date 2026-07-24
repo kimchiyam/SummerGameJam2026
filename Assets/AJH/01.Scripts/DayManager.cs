@@ -28,7 +28,10 @@ public class DayManager : MonoBehaviour
     {
         timer.OnTimerEnd += EndDay;
         SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
+    public void BeginDay()
+    {
         StartNextDay();
     }
 
@@ -59,6 +62,7 @@ public class DayManager : MonoBehaviour
         else
         {
             _currentPlanetDay++;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             StartNextDay();
         }
     }
