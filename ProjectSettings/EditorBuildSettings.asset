@@ -9,29 +9,29 @@ EditorBuildSettings:
     path: Assets/Wonyoung/Scene/HomeScene.unity
     guid: dc0fa8f725490e14388e7b03d118ea62
   - enabled: 1
-    path: Assets/Wonyoung/Scene/CutScene.unity
-    guid: 4bf05c24ab7c5e247b48f3f092b5e8c0
-  - enabled: 1
     path: Assets/Scenes/1.unity
-    guid: e3a60c7cb402327419b4517538b54e3a
+    guid: 157f20276f72ee74680d6bcadedf25fe
   - enabled: 1
     path: Assets/Scenes/2.unity
-    guid: 91305f3226bd1d34da0cdfb2487bb245
+    guid: 99cd6974a00febe4bb6c49ae85425fbb
   - enabled: 1
     path: Assets/Scenes/3.unity
-    guid: 3319023a6cb90c443916bd8c240ecc71
+    guid: 553880ea6a7a9c44c8a9e15c0222c293
   - enabled: 1
     path: Assets/Scenes/4.unity
-    guid: f4641cb6d13866a49a3b66e9cfbdfd8b
+    guid: 623078931df402440a8885bc6a60104c
   - enabled: 1
     path: Assets/Scenes/5.unity
-    guid: 83c571144c3c32b4ba2a64597498b14b
+    guid: dc4c98d9511853a49b9470f7873ee289
   - enabled: 1
     path: Assets/Scenes/6.unity
-    guid: 9a971284d00b4d948985c8d01110b9db
+    guid: a8facb8e0f6d344459eaca79557f338a
   - enabled: 1
     path: Assets/Scenes/7.unity
-    guid: 2d24020f8d22c0c40914d800a7721a7d
+    guid: a4583cf904edac345b06f2a23715d3fc
+  - enabled: 1
+    path: Assets/Wonyoung/Scene/CutScene.unity
+    guid: 4bf05c24ab7c5e247b48f3f092b5e8c0
   - enabled: 1
     path: Assets/Scenes/Planet.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
