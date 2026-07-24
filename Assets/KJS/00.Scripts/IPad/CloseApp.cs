@@ -11,7 +11,7 @@ namespace KJS._00.Scripts.IPad
 
         public void CLose_App()
         { 
-            app.gameObject.SetActive(true);
+            app.gameObject.SetActive(false);
         }
     }
 }
