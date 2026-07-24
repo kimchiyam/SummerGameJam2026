@@ -43,6 +43,11 @@ public class Timer : MonoBehaviour
                 else Resume();
             }
 
+            if (kb.qKey.wasPressedThisFrame)
+            {
+                DayManager.Instance.BeginDay();
+            }
+
             // E: 즉시 하루 끝내기
             if (kb.eKey.wasPressedThisFrame)
             {
