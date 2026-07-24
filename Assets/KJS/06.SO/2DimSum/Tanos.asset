@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
+  m_Name: Tanos
+  m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
+  ailenName: "\uB2E4\uB123\uC2A4"
+  age: 66
+  race: "\uD0C0\uC774\uD0C4\uC871"
+  address: "\uD0C0\uC774\uD0C4 - \uD544\uC5F0\uC2DC"
+  icon: {fileID: 8166710274925509176, guid: 27b85de17b94a864a97abdf8ad74b5b2, type: 3}
+  isReal: 1
+  startScript: "\uB098\uB294....\uD544\uC5F0\uC801\uC778 \uC874\uC7AC\uB2E4"
+  scripts:
+  - "66....\uC2A4\uD1A4\uC758 \uAC1C\uC218....."
+  - "\uB2E4\uB123\uC2A4..."
+  - "\uD0C0\uC774\uD0C4 - \uD544\uC5F0\uC2DC\uC774\uB2E4...."
