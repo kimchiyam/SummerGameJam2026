@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
   m_Name: "\uB9DE\uC74C 3"
   m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
-  ailenName: "\uBED0\uC5D0\uB531\uC2A4\uAFB9\uC2A4"
+  ailenName: "\uC090\uC5D0\uB531\uC2A4\uAFB9\uC2A4"
   age: 41
   race: "\uC950\uB8E8\uC774\uC0B0\uC131"
   address: "\uD558\uD504\uBB38 - \uBCA0\uC5B4"
