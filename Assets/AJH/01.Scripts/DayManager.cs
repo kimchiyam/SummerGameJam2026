@@ -8,18 +8,18 @@ public class DayManager : MonoBehaviour
 {
     public static DayManager Instance { get; private set; }
 
-    [Header("¿©·¯°¡Áö")]
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
     [SerializeField] Timer timer;
     [SerializeField] DayUI dayUI;
     [SerializeField] MiddleResult middleResultUI;
     [SerializeField] int scenePlent;
 
-    [Header("ÆäÀÌµåÀÎ")]
-    [SerializeField] CanvasGroup fadeCanvas;   // ÇÊµå Ãß°¡, ÀÎ½ºÆåÅÍ¿¡¼­ ¿¬°á
+    [Header("ï¿½ï¿½ï¿½Ìµï¿½ï¿½ï¿½")]
+    [SerializeField] CanvasGroup fadeCanvas;   // ï¿½Êµï¿½ ï¿½ß°ï¿½, ï¿½Î½ï¿½ï¿½ï¿½ï¿½Í¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     [SerializeField] float fadeDuration = 0.7f;
 
-    int _currentPlanetDay = 1;
-    int _totalDay = 13;
+   public int _currentPlanetDay = 1;
+   public int _totalDay = 13;
 
     private void Awake()
     {
@@ -53,7 +53,7 @@ public class DayManager : MonoBehaviour
 
     private void StartNextDay()
     {
-        Debug.Log($"[Day] StartNextDay ÁøÀÔ. dayUI null? {dayUI == null}");
+        Debug.Log($"[Day] StartNextDay ï¿½ï¿½ï¿½ï¿½. dayUI null? {dayUI == null}");
         dayUI.Show(_totalDay, () => timer.StartTimer(120f));
     }
 
@@ -77,7 +77,7 @@ public class DayManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
 
-        _waitingForSceneLoad = false;   // Ãß°¡
+        _waitingForSceneLoad = false;   // ï¿½ß°ï¿½
         if (dayUI == null) dayUI = FindObjectOfType<DayUI>();
         if (middleResultUI == null) middleResultUI = FindObjectOfType<MiddleResult>();
         var newTimer = FindObjectOfType<Timer>();
@@ -98,10 +98,10 @@ public class DayManager : MonoBehaviour
 
     IEnumerator ProceedAfterDayRoutine()
     {
-        // 1. ÆäÀÌµå ¾Æ¿ô
+        // 1. ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Æ¿ï¿½
         yield return Fade(0f, 1f);
 
-        // 2. ¾À ÀüÈ¯
+        // 2. ï¿½ï¿½ ï¿½ï¿½È¯
         _waitingForSceneLoad = true;
 
         if (_currentPlanetDay >= 2)
@@ -116,11 +116,11 @@ public class DayManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
-        // 3. ¾À ·Îµå°¡ ½ÇÁ¦·Î ³¡³¯ ¶§±îÁö ´ë±â
+        // 3. ï¿½ï¿½ ï¿½Îµå°¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
         while (_waitingForSceneLoad) yield return null;
-        yield return null;   // »õ ¾À ÃÊ±âÈ­ ÇÑ ÇÁ·¹ÀÓ ¿©À¯
+        yield return null;   // ï¿½ï¿½ ï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-        // 4. ÆäÀÌµå ÀÎ
+        // 4. ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½
         yield return Fade(1f, 0f);
     }
 
@@ -140,8 +140,8 @@ public class DayManager : MonoBehaviour
         }
         fadeCanvas.alpha = to;
 
-        // ¿ÏÀüÈ÷ ¹à¾ÆÁ³À» ¶§¸¸(=ÆäÀÌµå ÀÎ ³¡) ²ô±â
-        // ÆäÀÌµå ¾Æ¿ô ³¡³µÀ» ¶© °ËÀº È­¸é À¯ÁöÇØ¾ß ÇÏ¹Ç·Î ¾È ²û
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(=ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½
+        // ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Æ¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ ï¿½Ï¹Ç·ï¿½ ï¿½ï¿½ ï¿½ï¿½
         if (to <= 0f) fadeCanvas.gameObject.SetActive(false);
     }
 }
