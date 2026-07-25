@@ -749,7 +749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &119750859
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6958,6 +6958,8 @@ MonoBehaviour:
   scenePlent: 9
   fadeCanvas: {fileID: 1867555442}
   fadeDuration: 0.7
+  _currentPlanetDay: 1
+  _totalDay: 13
 --- !u!4 &1138114639
 Transform:
   m_ObjectHideFlags: 0
@@ -11332,7 +11334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1676794112
 RectTransform:
   m_ObjectHideFlags: 0
