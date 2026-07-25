@@ -5626,20 +5626,20 @@ MonoBehaviour:
   typingDuration: 2
   fadeDuration: 0.4
   cutscenes:
-  - sceneImage: {fileID: -6104034475657394623, guid: ef964535ccf53974aa3f9d26bcf5d797, type: 3}
+  - sceneImage: {fileID: 2968075189628986412, guid: 3dd297df232dac64693c1d85af1f97f3, type: 3}
     sceneText: "\uB2F9\uC2E0\uC740 \uCD08\uC2E0\uC131\uC774 \uD3ED\uBC1C\uD558\uAE30
       \uC804, \n\uD568\uC120\uC5D0 \uC788\uB358 \uBAA8\uB450\uB97C \uB300\uD53C\uC2DC\uCF30\uC2B5\uB2C8\uB2E4."
-  - sceneImage: {fileID: 1019935218, guid: ef964535ccf53974aa3f9d26bcf5d797, type: 3}
+  - sceneImage: {fileID: -1928468271863377802, guid: bf9b7d606f4182f48aed74e7a7e61d9a, type: 3}
     sceneText: "\uBE44\uB85D \uBAA8\uB450\uB97C \uAD6C\uD574\uB0B4\uC9C0\uB294 \uBABB\uD588\uC9C0\uB9CC,\n\uB2F9\uC2E0\uC740
       \uAD6C\uC870\uC120\uC758 \uD568\uC7A5\uC73C\uB85C\uC11C \uCD5C\uC120\uC744
       \uB2E4\uD588\uC2B5\uB2C8\uB2E4."
-  - sceneImage: {fileID: 3132488693626215438, guid: 8f7285d9c75f28146a94f017c3c3a6f0, type: 3}
+  - sceneImage: {fileID: -1928468271863377802, guid: bf9b7d606f4182f48aed74e7a7e61d9a, type: 3}
     sceneText: "\uCD1D \uC678\uACC4 \uC778\uAD6C    18,000,000\uBA85\n\uC0AC\uB9DD\uC790             
       95,294\uBA85\n\uC0DD\uC874\uC790          17,904,706\uBA85"
-  - sceneImage: {fileID: -1111571637163060975, guid: ffa431717be19684096ed48956d17f5d, type: 3}
+  - sceneImage: {fileID: -3779195210407025826, guid: e8bd5bc8cef0e0240ab4f66d11b505e8, type: 3}
     sceneText: "\uD568\uC120\uC5D0 \uC624\uB978 \uC774\uB4E4 \uC0AC\uC774\uC5D0\uC11C
       \uC5B8\uC820\uAC00 \n\uBD84\uC7C1\uC774 \uC77C\uC5B4\uB0A0\uC9C0\uB3C4 \uBAA8\uB985\uB2C8\uB2E4."
-  - sceneImage: {fileID: 4019976089477123954, guid: 5bdfc578c65806346add166ca8f1358c, type: 3}
+  - sceneImage: {fileID: -4834782733611117665, guid: 77e3d144d9b39724b863701fc9c7fabd, type: 3}
     sceneText: "\n\uADF8\uB7FC\uC5D0\uB3C4 \uB2F9\uC2E0\uC740 \uC0C8\uB85C\uC6B4
       \uC815\uCC29\uC9C0\uB97C \uD5A5\uD574 \uB098\uC544\uAC11\uB2C8\uB2E4."
   image: {fileID: 1987456641}
