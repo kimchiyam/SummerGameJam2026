@@ -31,8 +31,16 @@ namespace KSM.Scripts.Planet
 
         public void ExitBtn()
         {
+            // 1. 현재 씬의 Timer를 찾아서 텍스트 끄기
+            var timer = FindObjectOfType<Timer>();
+            if (timer != null) timer.ResetTimer();
+
+            // 2. DontDestroyOnLoad로 살아있는 DayManager 정리
+            if (DayManager.Instance != null)
+                Destroy(DayManager.Instance.gameObject);
+
+            // 3. 메인 씬으로 이동
             SceneManager.LoadScene(0);
-            
         }
     }
 }
