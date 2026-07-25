@@ -4460,7 +4460,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6920274672158514710, guid: 716fa2f963c05594aa86e2480f783296, type: 3}
+  m_Sprite: {fileID: 4953550190426181745, guid: 0271dbeb1286e0e4c8a1712996576e2f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5894,7 +5894,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uBE14\uB799 \n\uB9AC\uC2A4\uD2B8"
+  m_text: "\uC885\uC871 \n\uD2B9\uC131"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a2521b599186ede44a9dd1cf5164611e, type: 2}
   m_sharedMaterial: {fileID: -5159731970399664267, guid: a2521b599186ede44a9dd1cf5164611e, type: 2}
@@ -6709,8 +6709,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 94.79492, y: 97}
-  m_SizeDelta: {x: 289.59, y: 166.4193}
+  m_AnchoredPosition: {x: 104.17, y: 97}
+  m_SizeDelta: {x: 144.5783, y: 166.4193}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &940185862
 MonoBehaviour:
@@ -6732,7 +6732,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3847116564396062623, guid: 618de7ca67dfa294883dc8fed513d563, type: 3}
+  m_Sprite: {fileID: 3853029850681796332, guid: 0271dbeb1286e0e4c8a1712996576e2f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7973,7 +7973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c60faf98d065ed7459648450bce2d002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KJS._00.Scripts.IPad.OpenApp
-  app: {fileID: 680988257}
+  app: {fileID: 1947618628}
   scaleValue: {x: 1.1, y: 1.1, z: 1.1}
 --- !u!114 &1102410650
 MonoBehaviour:
@@ -10448,6 +10448,12 @@ MonoBehaviour:
   - {fileID: 6455726925243788482, guid: 8926b08e29beeac4cb98cea64597bf05, type: 3}
   - {fileID: 6455726925243788482, guid: 4b171a6f14b50b04f8f04d9a98ce7972, type: 3}
   - {fileID: 6455726925243788482, guid: 5bd56e17f7040e943b10c70042bcaf9d, type: 3}
+  - {fileID: 6455726925243788482, guid: 140eb6cfcddcecb4c96bc1a60abac08b, type: 3}
+  - {fileID: 6455726925243788482, guid: 08c2aa74fb775a34dbaa3a80e43132fb, type: 3}
+  - {fileID: 6455726925243788482, guid: 202d81802472b95458324c99d4e122ef, type: 3}
+  - {fileID: 6455726925243788482, guid: a06fa77dfce37524fb80a8db71a15102, type: 3}
+  - {fileID: 6455726925243788482, guid: 5f8291fd32020a34a88de2e678b8ca57, type: 3}
+  - {fileID: 6455726925243788482, guid: f6b284d696b405248b7cdb15cf4d6149, type: 3}
   currentailen: {fileID: 0}
   spawnPos: {fileID: 1478571083}
   originPos: {fileID: 446958483}

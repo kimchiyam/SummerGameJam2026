@@ -18,7 +18,7 @@ MonoBehaviour:
   address: "\uC678\uC655\uC131 - \uBFD4\uBFCC\uBFCC\uB85C"
   icon: {fileID: 4714397497969171530, guid: fe277680a12f0a740a7e8d3cc663deaa, type: 3}
   isReal: 0
-  startScript: "\uC5BC\uB9C8\uC918?"
+  startScript: "\uC5BC\uB9C8\uC918. \uBB50 10\uC5B5? 100\uC5B5?"
   scripts:
   - "29\uC138"
   - "\uB3C8\uB3C8\uB9AC\uC5B8\uC774\uB2E4"

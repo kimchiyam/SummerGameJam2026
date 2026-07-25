@@ -2666,7 +2666,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uADDC\uC728\uBD80"
+  m_text: "\uC885\uC871 \n\uD2B9\uC131"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a2521b599186ede44a9dd1cf5164611e, type: 2}
   m_sharedMaterial: {fileID: -5159731970399664267, guid: a2521b599186ede44a9dd1cf5164611e, type: 2}
@@ -8066,7 +8066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c60faf98d065ed7459648450bce2d002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KJS._00.Scripts.IPad.OpenApp
-  app: {fileID: 680988257}
+  app: {fileID: 1947618628}
   scaleValue: {x: 1.1, y: 1.1, z: 1.1}
 --- !u!114 &1102410650
 MonoBehaviour:

@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbc31056b86679b4f8e43c77760cc551, type: 3}
-  m_Name: black2-2
+  m_Name: Comon
   m_EditorClassIdentifier: Assembly-CSharp::KJS._06.SO.AilenSO
-  ailenName: "\uD638\uBAA8\uB9AC\uC5B8"
+  ailenName: "\uC730\uB69C\uC640"
   age: 22
-  race: "\uB370\uBE0C\uC871"
-  address: "\uAC1C\uBC1C\uC871 - \uCF54\uCF54\uC778\uC2DC"
-  icon: {fileID: 3853029850681796332, guid: 0271dbeb1286e0e4c8a1712996576e2f, type: 3}
+  race: .
+  address: "\uC544\uBC1C\uB860 \uD551\uC131 - JSA"
+  icon: {fileID: -8345923534435506807, guid: e52d457ad2a296548b1ccf8e760da7a4, type: 3}
   isReal: 0
-  startScript: "\uC7AD\uD31F\uC7AD\uD31F\uC7AD\uD31F"
+  startScript: "\uC74C\uC74C \uADF8\uB798~ \uC730\uB70C\uC640\uC774\uD615\uC774\uC57C~"
   scripts:
-  - "22\uC0B4\uC784"
-  - "\uD638\uBAA8\uB9AC\uC5B8\uC778\uB370?"
-  - "\uAC1C\uBC1C\uC871 - \uCF54\uCF54\uC778\uC2DC"
+  - "\uC74C\uC74C \uD615 22\uC0B4\uC774\uC57C~~"
+  - "\uADF8\uB798 \uD615 \uC730\uB69C\uC640\uC57C~~"
+  - "\uD615 \uD551\uC131 JSA\uCD9C\uC2E0\uC774\uC57C~~"

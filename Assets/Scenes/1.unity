@@ -9984,6 +9984,13 @@ MonoBehaviour:
   - {fileID: 6455726925243788482, guid: ff09fbc62cff7c547a22aaa5677196c6, type: 3}
   - {fileID: 6455726925243788482, guid: dead9a4d5b66336488bfec8bcd20f4b5, type: 3}
   - {fileID: 6455726925243788482, guid: a59cb7c5ec3f7d344a69940371ac44b5, type: 3}
+  - {fileID: 6455726925243788482, guid: b21b2946e3f8ee44ea95a41e35a28735, type: 3}
+  - {fileID: 6455726925243788482, guid: cb600beb58542cb4aaef3db5a072a33e, type: 3}
+  - {fileID: 6455726925243788482, guid: 054243866a7a6814684395067d324add, type: 3}
+  - {fileID: 6455726925243788482, guid: 8926b08e29beeac4cb98cea64597bf05, type: 3}
+  - {fileID: 6455726925243788482, guid: 1e5a7cd9c3a863945a1360c7d84f228e, type: 3}
+  - {fileID: 6455726925243788482, guid: 1816c3ee081f03f4b94f61882f611cab, type: 3}
+  - {fileID: 6455726925243788482, guid: 0cfc8fb022d505640b0841cac4129082, type: 3}
   currentailen: {fileID: 0}
   spawnPos: {fileID: 1478571083}
   originPos: {fileID: 446958483}
