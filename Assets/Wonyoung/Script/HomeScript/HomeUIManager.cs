@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using Unity.VectorGraphics;
 using UnityEngine;
@@ -18,6 +19,7 @@ public class HomeUIManager : MonoBehaviour
     [SerializeField] private float moveDistance2 = 850f;
     [SerializeField] private float moveDuration2 = 1f;
     private bool canClick = true;
+    [SerializeField] private Image desVeiw;
 
     [Header("Skin")]
     [SerializeField] private GameObject AlionSkin;
@@ -37,6 +39,12 @@ public class HomeUIManager : MonoBehaviour
             targetRenderer = AlionSkin.GetComponent<SpriteRenderer>();
         }
     }
+
+    private void Start()
+    {
+        desVeiw.gameObject.SetActive(false);
+    }
+
     public void OnStart()
     {
         if (SceneChangeImg == null) return;
@@ -137,6 +145,16 @@ public class HomeUIManager : MonoBehaviour
     {
         ChangeSkin(3);
         
+    }
+
+    public void DesVeiw()
+    {
+        desVeiw.gameObject.SetActive(true);
+    }
+
+    public void DesVeiwClose()
+    {
+        desVeiw.gameObject.SetActive(false);
     }
 
     //public void PlayEffect()

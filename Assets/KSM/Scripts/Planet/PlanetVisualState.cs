@@ -46,7 +46,6 @@ namespace KSM.Scripts.Planet
         {
             if (planet == null)
             {
-                Debug.LogError(gameObject.name + " 의 planet SO가 비어있습니다.");
                 return;
             }
  

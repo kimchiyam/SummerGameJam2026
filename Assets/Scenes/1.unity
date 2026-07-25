@@ -5905,7 +5905,7 @@ GameObject:
   - component: {fileID: 1001367016}
   - component: {fileID: 1001367015}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Real
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5975,9 +5975,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 795957150}
-        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
-        m_MethodName: ResetTimer
+      - m_Target: {fileID: 2118008274}
+        m_TargetAssemblyTypeName: MiddleResult, Assembly-CSharp
+        m_MethodName: OnConfirmClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6958,6 +6958,8 @@ MonoBehaviour:
   scenePlent: 9
   fadeCanvas: {fileID: 1867555442}
   fadeDuration: 0.7
+  _currentPlanetDay: 1
+  _totalDay: 13
 --- !u!4 &1138114639
 Transform:
   m_ObjectHideFlags: 0
@@ -14083,6 +14085,7 @@ MonoBehaviour:
   _trueAlien: {fileID: 1589771251}
   _falseAlien: {fileID: 137875991}
   _totalAlien: {fileID: 1147736131}
+  _confirmButton: {fileID: 1001367015}
 --- !u!4 &2118008275
 Transform:
   m_ObjectHideFlags: 0

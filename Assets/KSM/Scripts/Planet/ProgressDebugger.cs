@@ -34,7 +34,6 @@ namespace KSM.Scripts.Planet
             {
                 PlanetProgress.ResetAll();
                 RefreshAllVisuals();
-                Debug.Log("진행도 초기화");
             }
         }
  
@@ -42,7 +41,6 @@ namespace KSM.Scripts.Planet
         {
             if (PlanetProgress.IsAllCleared)
             {
-                Debug.Log("이미 모두 정복했습니다.");
                 return;
             }
  
@@ -57,7 +55,6 @@ namespace KSM.Scripts.Planet
             {
                 // allPlanets를 안 채웠어도 동작하도록 강제 진행
                 PlanetProgress.ForceSetIndex(PlanetProgress.CurrentIndex + 1);
-                Debug.Log($"진행도 → {PlanetProgress.CurrentIndex}");
             }
  
             RefreshAllVisuals();
@@ -67,7 +64,6 @@ namespace KSM.Scripts.Planet
         {
             int newIndex = Mathf.Max(0, PlanetProgress.CurrentIndex - 1);
             PlanetProgress.ForceSetIndex(newIndex);
-            Debug.Log($"진행도 → {newIndex}");
             RefreshAllVisuals();
         }
  

@@ -2302,6 +2302,8 @@ MonoBehaviour:
   scenePlent: 9
   fadeCanvas: {fileID: 888078539}
   fadeDuration: 0.7
+  _currentPlanetDay: 1
+  _totalDay: 13
 --- !u!4 &386445824
 Transform:
   m_ObjectHideFlags: 0
@@ -5535,6 +5537,7 @@ MonoBehaviour:
   _trueAlien: {fileID: 674063958}
   _falseAlien: {fileID: 988561562}
   _totalAlien: {fileID: 99178004}
+  _confirmButton: {fileID: 1095792950}
 --- !u!4 &876446972
 Transform:
   m_ObjectHideFlags: 0

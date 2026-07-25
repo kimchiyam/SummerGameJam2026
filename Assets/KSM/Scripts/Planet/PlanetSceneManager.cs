@@ -18,7 +18,6 @@ namespace KSM.Scripts.Planet
  
             if (thisPlanet == null)
             {
-                Debug.LogWarning("PlanetSession.Current가 비어있습니다. 태양계 씬에서 진입하세요.");
                 return;
             }
  
@@ -32,7 +31,6 @@ namespace KSM.Scripts.Planet
         {
             if (thisPlanet == null)
             {
-                Debug.LogError("클리어 처리 실패: 행성 정보가 없습니다.");
                 return;
             }
  

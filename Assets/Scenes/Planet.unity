@@ -18020,6 +18020,7 @@ GameObject:
   - component: {fileID: 1429221790}
   - component: {fileID: 1429221789}
   - component: {fileID: 1429221792}
+  - component: {fileID: 1429221793}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -18249,6 +18250,20 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1429221793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429221787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c5a2b75755d4b23b437b5198365d185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KSM.Scripts.Planet.ProgressDebugger
+  showOnScreen: 1
+  allPlanets: []
 --- !u!1 &1433635378
 GameObject:
   m_ObjectHideFlags: 0
