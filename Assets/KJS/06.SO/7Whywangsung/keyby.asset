@@ -18,7 +18,8 @@ MonoBehaviour:
   address: "\uC2A4\uD0C0\uC131 - \uCF00\uC774\uD06C\uD558\uC6B0\uC2A4"
   icon: {fileID: 8312523993596692215, guid: 0b7815b65f4c9334f960d273b33f442b, type: 3}
   isReal: 0
-  startScript: "\uB098\uB791 \uCDA4\uCD9C\uB798 \uC544\uB2C8\uBA74 \uC9C1\uC5C5\uB420\uB798?"
+  startScript: "\uB098\uB791 \uCDA4\uCD9C\uB798 \uC544\uB2C8\uBA74 \uC9C1\uC5C5\uB420\uB798?..\uC74C.\uD55C
+    4\uC870\uC815\uB3C4?"
   scripts:
   - "\uB098? 3\uC0B4! \u314E\u314E"
   - "\uC544 \uBC30\uACE0\uD30C...\uC544! \uB098\uB294 \uCEE4\uBE44\uC57C"

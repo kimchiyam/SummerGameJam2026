@@ -700,8 +700,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 94.79492, y: 97}
-  m_SizeDelta: {x: 289.59, y: 166.4193}
+  m_AnchoredPosition: {x: 94.79492, y: 113.72}
+  m_SizeDelta: {x: 289.59, y: 199.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &65152641
 MonoBehaviour:
@@ -723,7 +723,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3847116564396062623, guid: 618de7ca67dfa294883dc8fed513d563, type: 3}
+  m_Sprite: {fileID: -6601837291121082542, guid: c5ed62780f5501a448ac14f11b224efb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2992,7 +2992,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6920274672158514710, guid: 716fa2f963c05594aa86e2480f783296, type: 3}
+  m_Sprite: {fileID: -3302030326281356858, guid: b49927086151f4547ba67e0e799145ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4382,7 +4382,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uADDC\uC728\uBD80"
+  m_text: "\uC885\uC871 \n\uD2B9\uC131"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a2521b599186ede44a9dd1cf5164611e, type: 2}
   m_sharedMaterial: {fileID: -5159731970399664267, guid: a2521b599186ede44a9dd1cf5164611e, type: 2}
@@ -7385,7 +7385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c60faf98d065ed7459648450bce2d002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KJS._00.Scripts.IPad.OpenApp
-  app: {fileID: 680988257}
+  app: {fileID: 1947618628}
   scaleValue: {x: 1.1, y: 1.1, z: 1.1}
 --- !u!114 &1102410650
 MonoBehaviour:
@@ -9919,6 +9919,9 @@ MonoBehaviour:
   - {fileID: 6455726925243788482, guid: 9950a5941c510cf4bb5cf171447e8e2d, type: 3}
   - {fileID: 6455726925243788482, guid: e8f40f5202129834db113eb814f23841, type: 3}
   - {fileID: 6455726925243788482, guid: fcb6af235419f434b8ee14aa0a4684b7, type: 3}
+  - {fileID: 6455726925243788482, guid: 819d6a744f0b3d04c9683952b2eb63be, type: 3}
+  - {fileID: 6455726925243788482, guid: 5321fa020d0c71b439d8137e692439e4, type: 3}
+  - {fileID: 6455726925243788482, guid: 8d857d79d97fb2a4694ffbbe55d3905e, type: 3}
   currentailen: {fileID: 0}
   spawnPos: {fileID: 1478571083}
   originPos: {fileID: 446958483}
