@@ -53,4 +53,12 @@ public class Timer : MonoBehaviour
 
         UpdateText();
     }
+
+    public void ResetTimer()
+    {
+        _isPlaying = false;      // 타이머 정지
+        _currentTime = 0f;       // 경과 시간 0으로
+        if (_timeText != null)
+            _timeText.gameObject.SetActive(false);  // 시간 표시 숨김
+    }
 }

@@ -22,7 +22,6 @@ namespace KSM.Scripts.Planet
         {
             if (SoundManager.Instance == null)
             {
-                Debug.LogWarning("SoundManager가 없습니다. 첫 씬부터 실행했는지 확인하세요.");
                 return;
             }
  

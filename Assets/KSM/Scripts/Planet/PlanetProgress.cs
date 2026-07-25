@@ -52,15 +52,10 @@ namespace KSM.Scripts.Planet
             // 현재 차례인 행성만 클리어 처리 (순서 꼬임 방지)
             if (planet.planetIndex != CurrentIndex)
             {
-                Debug.LogWarning($"{planet.planetName}은(는) 현재 차례가 아닙니다.");
                 return;
             }
  
             CurrentIndex++;
-            Debug.Log($"{planet.planetName} 정복! 진행도 {CurrentIndex}/{TOTAL_PLANETS}");
- 
-            if (IsAllCleared)
-                Debug.Log("모든 행성 정복 완료 - 엔딩!");
         }
  
         /// <summary>새 게임 시작 시 초기화</summary>

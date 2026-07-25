@@ -34,6 +34,11 @@ public class CutsceneManager : MonoBehaviour
     private bool canClick = true;
     void Start()
     {
+        if (DayManager.Instance != null)
+        {
+            DayManager.Instance._currentPlanetDay = 1;
+            DayManager.Instance._totalDay = 13;
+        }
         PlanetProgress.ResetAll();
         StartCoroutine(PlayCutsceneRoutine());
     }

@@ -79,7 +79,6 @@ namespace KSM.Scripts.Planet
  
             if (!PlanetProgress.CanEnter(currentPlanet))
             {
-                Debug.Log($"{currentPlanet.planetName}은(는) 지금 진입할 수 없습니다.");
                 return;
             }
  
